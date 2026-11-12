@@ -1,0 +1,462 @@
+[
+  {
+    "href": "/category/mobile-phone",
+    "text": "Smartphones"
+  },
+  {
+    "href": "/category/samsung-mobile-phone",
+    "text": "Samsung"
+  },
+  {
+    "href": "/category/xiaomi-mobile-phone",
+    "text": "Xiaomi"
+  },
+  {
+    "href": "/category/oneplus-mobile-phone",
+    "text": "OnePlus"
+  },
+  {
+    "href": "/category/vivo-mobile-phone",
+    "text": "Vivo"
+  },
+  {
+    "href": "/category/honor-mobile-phone",
+    "text": "Honor"
+  },
+  {
+    "href": "/category/infinix-mobile-phone",
+    "text": "Infinix"
+  },
+  {
+    "href": "/category/tecno-mobile-phone",
+    "text": "Tecno"
+  },
+  {
+    "href": "/category/iphone",
+    "text": "iPhone"
+  },
+  {
+    "href": "/category/tablet",
+    "text": "Tablet"
+  },
+  {
+    "href": "/category/television",
+    "text": "Television"
+  },
+  {
+    "href": "/category/samsung-tv",
+    "text": "Samsung TV"
+  },
+  {
+    "href": "/category/sony-tv",
+    "text": "Sony TV"
+  },
+  {
+    "href": "/category/lg-tv",
+    "text": "LG TV"
+  },
+  {
+    "href": "/category/hisense-tv",
+    "text": "Hisense TV"
+  },
+  {
+    "href": "/category/haier-tv",
+    "text": "Haier TV"
+  },
+  {
+    "href": "/category/xiaomi-tv",
+    "text": "Xiaomi TV"
+  },
+  {
+    "href": "/category/tcl-tv",
+    "text": "TCL"
+  },
+  {
+    "href": "/category/toshiba-tv",
+    "text": "Toshiba TV"
+  },
+  {
+    "href": "/category/minister-tv",
+    "text": "Minister TV"
+  },
+  {
+    "href": "/category/smart-hd-tv",
+    "text": "Smart HD TV"
+  },
+  {
+    "href": "/category/smart-fhd-tv",
+    "text": "Smart FHD TV"
+  },
+  {
+    "href": "/category/smart-4k-uhd-tv",
+    "text": "Smart 4K UHD TV"
+  },
+  {
+    "href": "/category/qled-oled-4k-tv",
+    "text": "QLED / OLED 4K TV"
+  },
+  {
+    "href": "/category/air-conditioner",
+    "text": "Air Conditioner"
+  },
+  {
+    "href": "/category/haier-ac",
+    "text": "Haier AC"
+  },
+  {
+    "href": "/category/hisense-ac",
+    "text": "Hisense AC"
+  },
+  {
+    "href": "/category/gree-ac",
+    "text": "Gree AC"
+  },
+  {
+    "href": "/category/midea-ac",
+    "text": "Midea AC"
+  },
+  {
+    "href": "/category/viomi-ac",
+    "text": "Viomi AC"
+  },
+  {
+    "href": "/category\t/walton-ac",
+    "text": "Walton AC"
+  },
+  {
+    "href": "/category/samsung-ac",
+    "text": "Samsung AC"
+  },
+  {
+    "href": "/category/general-ac",
+    "text": "General AC"
+  },
+  {
+    "href": "/category/lg-ac",
+    "text": "LG AC"
+  },
+  {
+    "href": "/category/panasonic-ac",
+    "text": "Panasonic AC"
+  },
+  {
+    "href": "/category/itel-ac",
+    "text": "Itel AC"
+  },
+  {
+    "href": "/category/chigo-air-conditioner",
+    "text": "Chigo AC"
+  },
+  {
+    "href": "/category/inverter-ac",
+    "text": "Inverter AC"
+  },
+  {
+    "href": "/category/non-inverter-ac",
+    "text": "Non Inverter"
+  },
+  {
+    "href": "/category/cassette-ac",
+    "text": "Cassette AC"
+  },
+  {
+    "href": "/category/ceiling-ac",
+    "text": "Ceiling AC"
+  },
+  {
+    "href": "/category/portable-air-cooler",
+    "text": "Portable Air Cooler"
+  },
+  {
+    "href": "/category/refrigerators-and-freezer",
+    "text": "Refrigerator"
+  },
+  {
+    "href": "/category/chest-freezer",
+    "text": "Deep Freezer"
+  },
+  {
+    "href": "/category/samsung-fridge",
+    "text": "Samsung"
+  },
+  {
+    "href": "/category/sharp-refrigerator",
+    "text": "Sharp"
+  },
+  {
+    "href": "/category/hitachi-refrigerator",
+    "text": "Hitachi"
+  },
+  {
+    "href": "/category/hisense-refrigerator",
+    "text": "Hisense"
+  },
+  {
+    "href": "/category/haier-refrigerator",
+    "text": "Haier"
+  },
+  {
+    "href": "/category/whirlpool-refrigerator",
+    "text": "Whirlpool"
+  },
+  {
+    "href": "/category/lg-refrigerator",
+    "text": "LG"
+  },
+  {
+    "href": "/category/midea-refrigerator",
+    "text": "Midea"
+  },
+  {
+    "href": "/category/walton-refrigerator",
+    "text": "Walton"
+  },
+  {
+    "href": "/category/toshin-refrigerator",
+    "text": "Toshin"
+  },
+  {
+    "href": "/category/bosch-refrigerator",
+    "text": "Bosch"
+  },
+  {
+    "href": "/category/minister-refrigerator",
+    "text": "Minister"
+  },
+  {
+    "href": "/category/myone-refrigerator",
+    "text": "Myone"
+  },
+  {
+    "href": "/category/transtec-refrigerator",
+    "text": "Transtec"
+  },
+  {
+    "href": "/category/side-by-side-refrigerator",
+    "text": "Side By Side"
+  },
+  {
+    "href": "/category/mini-refrigerator",
+    "text": "Mini Refrigerator"
+  },
+  {
+    "href": "/category/frost",
+    "text": "Frost"
+  },
+  {
+    "href": "/category/no-frost",
+    "text": "No Frost"
+  },
+  {
+    "href": "/category/up-right",
+    "text": "Up Right"
+  },
+  {
+    "href": "/category/washing-machine",
+    "text": "Washing Machine"
+  },
+  {
+    "href": "/category/sharp-washing-machine",
+    "text": "Sharp"
+  },
+  {
+    "href": "/category/hitachi-washing-machine",
+    "text": "Hitachi"
+  },
+  {
+    "href": "/category/samsung-washing-machine",
+    "text": "Samsung"
+  },
+  {
+    "href": "/category/hisense-washing-machine",
+    "text": "Hisense"
+  },
+  {
+    "href": "/category/haier-washing-machine",
+    "text": "Haier"
+  },
+  {
+    "href": "/category/lg-washing-machine",
+    "text": "LG"
+  },
+  {
+    "href": "/category/whirlpool-washing-machine",
+    "text": "Whirlpool"
+  },
+  {
+    "href": "/category/xiaomi-washing-machine",
+    "text": "Xiaomi"
+  },
+  {
+    "href": "/category/panasonic-washing-machine",
+    "text": "Panasonic"
+  },
+  {
+    "href": "/category/bosch-washing-machine",
+    "text": "Bosch"
+  },
+  {
+    "href": "/category/top-loading",
+    "text": "Top loading"
+  },
+  {
+    "href": "/category/front-loading",
+    "text": "Front loading"
+  },
+  {
+    "href": "/category/kitchen-appliances",
+    "text": "Kitchen Appliances"
+  },
+  {
+    "href": "/category/oven",
+    "text": "Oven"
+  },
+  {
+    "href": "/category/air-fryer",
+    "text": "Air Fryer"
+  },
+  {
+    "href": "/category/mixer-grinders",
+    "text": "Mixer Grinders"
+  },
+  {
+    "href": "/category/induction-cooker",
+    "text": "Induction Cooker"
+  },
+  {
+    "href": "/category/infrared-cooker",
+    "text": "Infrared Cooker"
+  },
+  {
+    "href": "/category/rice-cooker",
+    "text": "Rice Cooker"
+  },
+  {
+    "href": "/category/hand-blender",
+    "text": "Hand Blender"
+  },
+  {
+    "href": "/category/dishwasher",
+    "text": "Dishwasher"
+  },
+  {
+    "href": "/category/kitchen-hood",
+    "text": "Kitchen Hood"
+  },
+  {
+    "href": "/category/sandwich-maker",
+    "text": "Sandwich Maker"
+  },
+  {
+    "href": "/category/coffee-maker",
+    "text": "Coffee Maker"
+  },
+  {
+    "href": "/category/toaster",
+    "text": "Toaster"
+  },
+  {
+    "href": "/category/juicer",
+    "text": "Juicer"
+  },
+  {
+    "href": "/category/gas-stove",
+    "text": "Gas Stove"
+  },
+  {
+    "href": "/category/food-processor",
+    "text": "Food Processor"
+  },
+  {
+    "href": "/category/multi-cooker",
+    "text": "Multi Cooker"
+  },
+  {
+    "href": "/category/speaker-and-soundbar",
+    "text": "Soundbar"
+  },
+  {
+    "href": "/category/samsung-sound-bar",
+    "text": "Samsung"
+  },
+  {
+    "href": "/category/sony-sound-bar",
+    "text": "Sony"
+  },
+  {
+    "href": "/category/jbl-sound-bar",
+    "text": "JBL"
+  },
+  {
+    "href": "/category/small-appliances",
+    "text": "Small Appliances"
+  },
+  {
+    "href": "/category/geyser",
+    "text": "Geyser"
+  },
+  {
+    "href": "/category/air-purifier",
+    "text": "Air Purifier"
+  },
+  {
+    "href": "/category/water-purifier",
+    "text": "Water Purifier"
+  },
+  {
+    "href": "/category/ceiling-fan",
+    "text": "Ceiling Fan"
+  },
+  {
+    "href": "/category/iron",
+    "text": "Iron"
+  },
+  {
+    "href": "/category/room-heater",
+    "text": "Room Heater"
+  },
+  {
+    "href": "/category/electric-kettle",
+    "text": "Electric Kettle"
+  },
+  {
+    "href": "/category/vacuum-cleaner",
+    "text": "Vacuum Cleaner"
+  },
+  {
+    "href": "/category/lifestyle",
+    "text": "Lifestyle"
+  },
+  {
+    "href": "/category/trimmer",
+    "text": "Trimmer"
+  },
+  {
+    "href": "/category/hair-straightener",
+    "text": "Hair Straightener"
+  },
+  {
+    "href": "/category/hair-dryer",
+    "text": "Hair Dryer"
+  },
+  {
+    "href": "/category/electric-bike",
+    "text": "E Bike"
+  },
+  {
+    "href": "/category/gadget",
+    "text": "Gadget"
+  },
+  {
+    "href": "/category/power-station",
+    "text": "Power Station"
+  },
+  {
+    "href": "/category/ecoflow-portable-power-station",
+    "text": "EcoFlow"
+  },
+  {
+    "href": "/category/anker-power-station",
+    "text": "Anker"
+  }
+]

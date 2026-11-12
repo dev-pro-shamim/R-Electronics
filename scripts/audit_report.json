@@ -1,0 +1,255 @@
+{
+  "routesChecked": [
+    {
+      "route": "/",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/category/television",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/category/air-conditioner",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/category/refrigerator",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/category/washing-machine",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/category/microwave-oven",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/category/water-purifiers",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/category/geyser-water-heaters",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/category/home-appliance",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/category/all",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/product/panasonic-mixer-grinder-mxge3750-black",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/compare",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/cart",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/checkout",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/offer",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/track-order",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/invoice/RE-104921",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/account",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/account/order",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/account/wishlist",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/admin",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/our-contacts",
+      "status": 307,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/page/about-us",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "route": "/page/warranty-policy",
+      "status": 200,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "brokenImages": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    }
+  ],
+  "totalErrors": 0,
+  "totalBrokenImages": 0,
+  "overflowIssues": [],
+  "interactiveChecks": {
+    "searchAutocomplete": true,
+    "addToCartDrawer": true,
+    "addToCompare": true,
+    "authModal": true,
+    "chatbot": true
+  },
+  "totalFailedRequests": 0
+}

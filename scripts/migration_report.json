@@ -1,0 +1,43 @@
+{
+  "sourceWebsite": "https://rangoelectronics.com/",
+  "targetWebsite": "Rango Electronics (Local Next.js Production Build)",
+  "totalProductsSource": 153,
+  "totalProductsImported": 153,
+  "missingProducts": 0,
+  "duplicateProducts": 0,
+  "totalImagesTransferred": 375,
+  "categoriesCount": 9,
+  "categoryBreakdown": {
+    "kitchen-appliances": 43,
+    "water-purifiers": 13,
+    "refrigerator": 15,
+    "television": 25,
+    "washing-machine": 19,
+    "geyser-water-heater": 24,
+    "lifestyle": 3,
+    "small-appliances": 9,
+    "air-conditioner": 2
+  },
+  "brandsCount": 19,
+  "brandBreakdown": {
+    "Panasonic": 6,
+    "Konka": 9,
+    "Hollow Tech": 1,
+    "Haier": 32,
+    "Rango": 26,
+    "Samsung": 4,
+    "Hisense": 15,
+    "Xiaomi": 11,
+    "Whirlpool": 10,
+    "Sharp": 7,
+    "Eva Pure": 6,
+    "Aqua": 1,
+    "Dewanco": 5,
+    "Hot Point": 3,
+    "Regent": 4,
+    "Midea": 3,
+    "Shameem Tropica": 3,
+    "Philips": 6,
+    "Gree": 1
+  }
+}

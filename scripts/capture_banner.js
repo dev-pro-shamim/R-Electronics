@@ -1,0 +1,21 @@
+const puppeteer = require("puppeteer-core");
+const path = require("path");
+
+(async () => {
+  const browser = await puppeteer.launch({
+    executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    headless: "new",
+    args: ["--no-sandbox", "--disable-setuid-sandbox"]
+  });
+  const page = await browser.newPage();
+  await page.setViewport({ width: 1440, height: 900 });
+  await page.goto("http://localhost:3000", { waitUntil: "networkidle2" });
+  await page.evaluate(() => {
+    const el = document.querySelector('img[alt="Rango Electronics Mega Offer"]');
+    if (el) el.scrollIntoView({ block: 'center' });
+  });
+  await new Promise(r => setTimeout(r, 1500));
+  await page.screenshot({ path: path.join("C:/Users/DITS-USER/.gemini/antigravity/brain/116bd0ad-cecc-4623-88e6-f061cd011624", "target_mid_banner_exact.png") });
+  await browser.close();
+  console.log("Captured exact banner!");
+})();

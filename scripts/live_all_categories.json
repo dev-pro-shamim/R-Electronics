@@ -1,0 +1,2906 @@
+[
+  {
+    "id": 775,
+    "count": 0,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/air-conditioner/1-ton-inverter-and-non-inverter-ac/",
+    "name": "1 Ton Inverter &amp; Non Inverter AC",
+    "slug": "1-ton-inverter-and-non-inverter-ac",
+    "taxonomy": "product_cat",
+    "parent": 285,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/775",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/285"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=775"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 776,
+    "count": 0,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/air-conditioner/1-5-ton-inverter-and-non-inverter-ac/",
+    "name": "1.5 Ton Inverter &amp; Non Inverter AC",
+    "slug": "1-5-ton-inverter-and-non-inverter-ac",
+    "taxonomy": "product_cat",
+    "parent": 285,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/776",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/285"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=776"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 367,
+    "count": 1,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/smart-android-tv/100-inch-tv/",
+    "name": "100 Inch",
+    "slug": "100-inch-tv",
+    "taxonomy": "product_cat",
+    "parent": 293,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/367",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/293"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=367"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 777,
+    "count": 0,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/air-conditioner/2-ton-inverter-and-non-inverter-ac/",
+    "name": "2 Ton Inverter &amp; Non Inverter AC",
+    "slug": "2-ton-inverter-and-non-inverter-ac",
+    "taxonomy": "product_cat",
+    "parent": 285,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/777",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/285"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=777"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 778,
+    "count": 1,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/air-conditioner/2-5-ton-inverter-and-non-inverter-ac/",
+    "name": "2.5 Ton Inverter &amp; Non Inverter AC",
+    "slug": "2-5-ton-inverter-and-non-inverter-ac",
+    "taxonomy": "product_cat",
+    "parent": 285,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/778",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/285"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=778"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 779,
+    "count": 0,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/air-conditioner/3-ton-split-type-inverter-ac/",
+    "name": "3 Ton Split Type Inverter AC",
+    "slug": "3-ton-split-type-inverter-ac",
+    "taxonomy": "product_cat",
+    "parent": 285,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/779",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/285"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=779"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 780,
+    "count": 0,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/air-conditioner/3-ton-cassette-4-ton-cassette-5-ton-cassette-type-ac/",
+    "name": "3 Ton, 4 Ton, 5 Ton Cassette Type AC",
+    "slug": "3-ton-cassette-4-ton-cassette-5-ton-cassette-type-ac",
+    "taxonomy": "product_cat",
+    "parent": 285,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/780",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/285"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=780"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 286,
+    "count": 1,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/air-conditioner/3-ton-ceiling-4-ton-ceiling-5-ton-ceiling-type-ac/",
+    "name": "3 Ton, 4 Ton, 5 Ton Ceiling Type AC",
+    "slug": "3-ton-ceiling-4-ton-ceiling-5-ton-ceiling-type-ac",
+    "taxonomy": "product_cat",
+    "parent": 285,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/286",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/285"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=286"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 301,
+    "count": 2,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/smart-android-tv/32-inch/",
+    "name": "32 Inch",
+    "slug": "32-inch",
+    "taxonomy": "product_cat",
+    "parent": 293,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/301",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/293"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=301"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 356,
+    "count": 5,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/smart-android-tv/43-inch/",
+    "name": "43 Inch",
+    "slug": "43-inch",
+    "taxonomy": "product_cat",
+    "parent": 293,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/356",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/293"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=356"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 366,
+    "count": 2,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/smart-android-tv/50-inch/",
+    "name": "50 Inch",
+    "slug": "50-inch",
+    "taxonomy": "product_cat",
+    "parent": 293,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/366",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/293"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=366"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 339,
+    "count": 4,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/smart-android-tv/55-inch/",
+    "name": "55 Inch",
+    "slug": "55-inch",
+    "taxonomy": "product_cat",
+    "parent": 293,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/339",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/293"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=339"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 361,
+    "count": 5,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/smart-android-tv/65-inch/",
+    "name": "65 Inch",
+    "slug": "65-inch",
+    "taxonomy": "product_cat",
+    "parent": 293,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/361",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/293"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=361"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 382,
+    "count": 4,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/smart-android-tv/75-inch/",
+    "name": "75 Inch",
+    "slug": "75-inch",
+    "taxonomy": "product_cat",
+    "parent": 293,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/382",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/293"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=382"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 772,
+    "count": 2,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/smart-android-tv/85-inch/",
+    "name": "85 Inch",
+    "slug": "85-inch",
+    "taxonomy": "product_cat",
+    "parent": 293,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/772",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/293"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=772"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 820,
+    "count": 1,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/service-repair/installation-open/",
+    "name": "AC Installation &amp; Open",
+    "slug": "installation-open",
+    "taxonomy": "product_cat",
+    "parent": 781,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/820",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/781"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=820"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 782,
+    "count": 1,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/service-repair/ac-rapair/",
+    "name": "AC Repair",
+    "slug": "ac-rapair",
+    "taxonomy": "product_cat",
+    "parent": 781,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/782",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/781"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=782"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 285,
+    "count": 2,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/air-conditioner/",
+    "name": "Air Conditioner",
+    "slug": "air-conditioner",
+    "taxonomy": "product_cat",
+    "parent": 0,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/285",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=285"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 393,
+    "count": 14,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/home-appliance/blender-juicer/",
+    "name": "Blender &amp; Juicer",
+    "slug": "blender-juicer",
+    "taxonomy": "product_cat",
+    "parent": 242,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/393",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/242"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=393"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 440,
+    "count": 10,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/refrigerator/chest-freezer/",
+    "name": "Chest Freezer",
+    "slug": "chest-freezer",
+    "taxonomy": "product_cat",
+    "parent": 317,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/440",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/317"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=440"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 763,
+    "count": 7,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/microwave-oven/convection/",
+    "name": "Convection",
+    "slug": "convection",
+    "taxonomy": "product_cat",
+    "parent": 312,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/763",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/312"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=763"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 808,
+    "count": 5,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/geyser-water-heaters/dewanco-geyser-water-heaters/",
+    "name": "Dewanco",
+    "slug": "dewanco-geyser-water-heaters",
+    "taxonomy": "product_cat",
+    "parent": 803,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/808",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/803"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=808"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 787,
+    "count": 2,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/water-purifiers/direct-flow/",
+    "name": "Direct Flow",
+    "slug": "direct-flow",
+    "taxonomy": "product_cat",
+    "parent": 784,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/787",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/784"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=787"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 788,
+    "count": 3,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/water-purifiers/dispenser/",
+    "name": "Dispenser",
+    "slug": "dispenser",
+    "taxonomy": "product_cat",
+    "parent": 784,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/788",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/784"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=788"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 417,
+    "count": 4,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/home-appliance/electric-kettle/",
+    "name": "Electric Kettle",
+    "slug": "electric-kettle",
+    "taxonomy": "product_cat",
+    "parent": 242,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/417",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/242"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=417"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 821,
+    "count": 3,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/geyser-water-heaters/eva-pure/",
+    "name": "Eva Pure",
+    "slug": "eva-pure",
+    "taxonomy": "product_cat",
+    "parent": 803,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/821",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/803"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=821"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 550,
+    "count": 0,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/home-appliance/fan/",
+    "name": "Fan",
+    "slug": "fan",
+    "taxonomy": "product_cat",
+    "parent": 242,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/550",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/242"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=550"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 755,
+    "count": 8,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/washing-machine/front-loading/",
+    "name": "Front Loading",
+    "slug": "front-loading",
+    "taxonomy": "product_cat",
+    "parent": 275,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/755",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/275"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=755"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 756,
+    "count": 0,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/refrigerator/frost-refrigerator/",
+    "name": "Frost",
+    "slug": "frost-refrigerator",
+    "taxonomy": "product_cat",
+    "parent": 317,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/756",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/317"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=756"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 803,
+    "count": 24,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/geyser-water-heaters/",
+    "name": "Geyser &amp; Water Heaters",
+    "slug": "geyser-water-heaters",
+    "taxonomy": "product_cat",
+    "parent": 0,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/803",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=803"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 760,
+    "count": 8,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/microwave-oven/grill/",
+    "name": "Grill",
+    "slug": "grill",
+    "taxonomy": "product_cat",
+    "parent": 312,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/760",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/312"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=760"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 815,
+    "count": 3,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/geyser-water-heaters/haier-geyser-water-heaters/",
+    "name": "Haier",
+    "slug": "haier-geyser-water-heaters",
+    "taxonomy": "product_cat",
+    "parent": 803,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/815",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/803"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=815"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 242,
+    "count": 34,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/home-appliance/",
+    "name": "Home Appliance",
+    "slug": "home-appliance",
+    "taxonomy": "product_cat",
+    "parent": 0,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/242",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=242"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 794,
+    "count": 1,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/water-purifiers/hot-cold-normal/",
+    "name": "Hot Cold Normal",
+    "slug": "hot-cold-normal",
+    "taxonomy": "product_cat",
+    "parent": 784,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/794",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/784"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=794"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 806,
+    "count": 3,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/geyser-water-heaters/hot-point-geyser-water-heaters/",
+    "name": "Hot Point",
+    "slug": "hot-point-geyser-water-heaters",
+    "taxonomy": "product_cat",
+    "parent": 803,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/806",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/803"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=806"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 538,
+    "count": 3,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/home-appliance/infrared-cooker/",
+    "name": "Infrared Cooker",
+    "slug": "infrared-cooker",
+    "taxonomy": "product_cat",
+    "parent": 242,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/538",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/242"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=538"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 372,
+    "count": 5,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/home-appliance/iron/",
+    "name": "Iron",
+    "slug": "iron",
+    "taxonomy": "product_cat",
+    "parent": 242,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/372",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/242"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=372"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 783,
+    "count": 1,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/service-repair/master-servicing/",
+    "name": "Master Servicing",
+    "slug": "master-servicing",
+    "taxonomy": "product_cat",
+    "parent": 781,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/783",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/781"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=783"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 312,
+    "count": 18,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/microwave-oven/",
+    "name": "Microwave Oven",
+    "slug": "microwave-oven",
+    "taxonomy": "product_cat",
+    "parent": 0,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/312",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=312"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 805,
+    "count": 3,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/geyser-water-heaters/midea-geyser-water-heaters/",
+    "name": "Midea",
+    "slug": "midea-geyser-water-heaters",
+    "taxonomy": "product_cat",
+    "parent": 803,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/805",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/803"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=805"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 318,
+    "count": 2,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/refrigerator/non-frost-refrigerator/",
+    "name": "No Frost",
+    "slug": "non-frost-refrigerator",
+    "taxonomy": "product_cat",
+    "parent": 317,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/318",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/317"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=318"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 304,
+    "count": 0,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/air-conditioner/portable-ac-and-floor-stand-ac/",
+    "name": "Portable AC &amp; Floor Stand AC",
+    "slug": "portable-ac-and-floor-stand-ac",
+    "taxonomy": "product_cat",
+    "parent": 285,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/304",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/285"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=304"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 317,
+    "count": 15,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/refrigerator/",
+    "name": "Refrigerator",
+    "slug": "refrigerator",
+    "taxonomy": "product_cat",
+    "parent": 0,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/317",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=317"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 807,
+    "count": 4,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/geyser-water-heaters/regent-instant-water-heater/",
+    "name": "Regent",
+    "slug": "regent-instant-water-heater",
+    "taxonomy": "product_cat",
+    "parent": 803,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/807",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/803"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=807"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 790,
+    "count": 6,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/water-purifiers/ro/",
+    "name": "Reverse Osmosis",
+    "slug": "ro",
+    "taxonomy": "product_cat",
+    "parent": 784,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/790",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/784"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=790"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 632,
+    "count": 5,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/home-appliance/rice-cooker/",
+    "name": "Rice Cooker",
+    "slug": "rice-cooker",
+    "taxonomy": "product_cat",
+    "parent": 242,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/632",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/242"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=632"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 789,
+    "count": 1,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/water-purifiers/ro-alkaline/",
+    "name": "RO Alkaline",
+    "slug": "ro-alkaline",
+    "taxonomy": "product_cat",
+    "parent": 784,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/789",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/784"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=789"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 781,
+    "count": 3,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/service-repair/",
+    "name": "Service &amp; Repair",
+    "slug": "service-repair",
+    "taxonomy": "product_cat",
+    "parent": 0,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/781",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=781"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 804,
+    "count": 3,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/geyser-water-heaters/shameem-geyser-water-heaters/",
+    "name": "Shameem",
+    "slug": "shameem-geyser-water-heaters",
+    "taxonomy": "product_cat",
+    "parent": 803,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/804",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/803"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=804"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 758,
+    "count": 2,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/refrigerator/side-by-side-refrigerator/",
+    "name": "Side by Side",
+    "slug": "side-by-side-refrigerator",
+    "taxonomy": "product_cat",
+    "parent": 317,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/758",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/317"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=758"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 759,
+    "count": 6,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/microwave-oven/solo/",
+    "name": "Solo",
+    "slug": "solo",
+    "taxonomy": "product_cat",
+    "parent": 312,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/759",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/312"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=759"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 293,
+    "count": 25,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/smart-android-tv/",
+    "name": "Television",
+    "slug": "smart-android-tv",
+    "taxonomy": "product_cat",
+    "parent": 0,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/293",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=293"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 754,
+    "count": 11,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/washing-machine/top-loading/",
+    "name": "Top Loading",
+    "slug": "top-loading",
+    "taxonomy": "product_cat",
+    "parent": 275,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/754",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/275"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=754"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 810,
+    "count": 4,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/top-selling/",
+    "name": "Top Selling",
+    "slug": "top-selling",
+    "taxonomy": "product_cat",
+    "parent": 0,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/810",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=810"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 757,
+    "count": 1,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/refrigerator/up-right-refrigerator/",
+    "name": "Up Right",
+    "slug": "up-right-refrigerator",
+    "taxonomy": "product_cat",
+    "parent": 317,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/757",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/317"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=757"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 275,
+    "count": 19,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/washing-machine/",
+    "name": "Washing Machine",
+    "slug": "washing-machine",
+    "taxonomy": "product_cat",
+    "parent": 0,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/275",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=275"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 784,
+    "count": 13,
+    "description": "",
+    "link": "https://rangoelectronics.com/product-category/water-purifiers/",
+    "name": "Water Purifiers",
+    "slug": "water-purifiers",
+    "taxonomy": "product_cat",
+    "parent": 0,
+    "meta": [],
+    "menu_order": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat/784",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product_cat"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/taxonomies/product_cat"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://rangoelectronics.com/wp-json/wp/v2/product?product_cat=784"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
