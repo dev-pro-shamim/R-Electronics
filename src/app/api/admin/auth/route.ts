@@ -4,6 +4,7 @@ import {
   createAdminSessionToken,
   getAdminSessionFromRequest,
   hashPassword,
+  verifyAdminPassword,
 } from "@/lib/adminAuth";
 import { appendAuditLog, readAdminDb, writeAdminDb } from "@/lib/adminDb";
 import { AdminRoleName, AdminUserAccount } from "@/types/admin";
@@ -46,14 +47,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const envPassword = process.env.ADMIN_PASSWORD;
-    const isPrimaryAdmin =
-      matchedUser.email.toLowerCase() ===
-      (process.env.ADMIN_EMAIL || "admin@rangoelectronics.com").toLowerCase();
-
-    const passwordMatches =
-      hashPassword(password) === matchedUser.passwordHash ||
-      (isPrimaryAdmin && Boolean(envPassword) && password === envPassword);
+    const passwordMatches = verifyAdminPassword(password, matchedUser);
 
     if (!passwordMatches) {
       return NextResponse.json(
@@ -102,7 +96,8 @@ export async function POST(req: NextRequest) {
     });
 
     return res;
-  } catch {
+  } catch (err) {
+    console.error("Admin Auth POST error:", err);
     return NextResponse.json(
       { error: "Invalid request payload" },
       { status: 400 }

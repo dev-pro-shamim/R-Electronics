@@ -790,23 +790,33 @@ export function readAdminDbCached(): AdminDatabase {
 }
 
 export function writeAdminDb(db: AdminDatabase): void {
-  if (!fs.existsSync(DB_DIR)) {
-    fs.mkdirSync(DB_DIR, { recursive: true });
-  }
-  const reviewsArr = Array.isArray(db.reviews) ? db.reviews : [];
-  if (!fs.existsSync(REVIEWS_PATH) || reviewsArr !== lastWrittenReviewsRef) {
-    fs.writeFileSync(REVIEWS_PATH, JSON.stringify(reviewsArr), "utf8");
-    lastWrittenReviewsRef = reviewsArr;
-  }
-  const { reviews: _omitReviews, ...coreDb } = db;
-  fs.writeFileSync(DB_PATH, JSON.stringify(coreDb), "utf8");
   try {
+    if (!fs.existsSync(DB_DIR)) {
+      fs.mkdirSync(DB_DIR, { recursive: true });
+    }
+    const reviewsArr = Array.isArray(db.reviews) ? db.reviews : [];
+    if (!fs.existsSync(REVIEWS_PATH) || reviewsArr !== lastWrittenReviewsRef) {
+      fs.writeFileSync(REVIEWS_PATH, JSON.stringify(reviewsArr), "utf8");
+      lastWrittenReviewsRef = reviewsArr;
+    }
+    const { reviews: _omitReviews, ...coreDb } = db;
+    fs.writeFileSync(DB_PATH, JSON.stringify(coreDb), "utf8");
+    try {
+      cachedDbSnapshot = {
+        key: getAdminDbStatKey(),
+        db,
+      };
+    } catch {
+      cachedDbSnapshot = null;
+    }
+  } catch (err) {
+    // In serverless environments (like Vercel read-only filesystem), disk writes may fail.
+    // We update in-memory cache so subsequent reads within the lambda container stay valid.
     cachedDbSnapshot = {
-      key: getAdminDbStatKey(),
+      key: `mem-${Date.now()}`,
       db,
     };
-  } catch {
-    cachedDbSnapshot = null;
+    console.warn("writeAdminDb disk write skipped/failed (likely serverless readonly env):", err);
   }
 }
 

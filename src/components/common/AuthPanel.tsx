@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useCart } from "@/context/CartContext";
+import { supabase } from "@/lib/supabase";
 import {
   X,
   Mail,
@@ -195,21 +196,38 @@ export default function AuthPanel({
     setError("");
     setLoading(true);
     try {
+      // 1. Try first-party direct Google OAuth route
       const checkRes = await fetch("/api/auth/google?check=1", { cache: "no-store" });
       const checkData = await checkRes.json().catch(() => ({ configured: false }));
-      if (!checkData?.configured) {
-        setError(
-          "Direct Google Sign-In (using Rango Electronics domain instead of Supabase) needs GOOGLE_CLIENT_ID & GOOGLE_CLIENT_SECRET in .env.local or Admin Settings. Please use Email & Password or Mobile OTP for now."
-        );
-        setLoading(false);
+      if (checkData?.configured) {
+        window.location.href = "/api/auth/google";
         return;
       }
-      window.location.href = "/api/auth/google";
+
+      // 2. Fallback to Supabase OAuth if first-party credentials aren't set in environment
+      const redirectTo = `${window.location.origin}/auth/callback`;
+      const { data, error: sbError } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo,
+          queryParams: {
+            access_type: "offline",
+            prompt: "consent",
+          },
+        },
+      });
+
+      if (sbError) {
+        throw sbError;
+      }
+      if (data?.url) {
+        window.location.href = data.url;
+      }
     } catch (err) {
       setError(
         err instanceof Error
           ? err.message
-          : "Google authentication could not start."
+          : "Google authentication could not start. Please use Email & Password or Mobile OTP."
       );
       setLoading(false);
     }
