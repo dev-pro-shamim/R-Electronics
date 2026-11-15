@@ -23,13 +23,45 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
+  let body: Record<string, unknown> = {};
   try {
-    const body = await req.json();
+    body = await req.json();
+  } catch {
+    return NextResponse.json(
+      { error: "Please provide a valid administrator email and password." },
+      { status: 400 }
+    );
+  }
+
+  try {
     const email = String(body.email || "").trim().toLowerCase();
     const password = String(body.password || "");
 
+    if (!email || !password) {
+      return NextResponse.json(
+        { error: "Administrator email and password are required." },
+        { status: 400 }
+      );
+    }
+
     const db = readAdminDb();
-    const matchedUser = (db.adminUsers || []).find(
+    let adminUsers = Array.isArray(db.adminUsers) ? [...db.adminUsers] : [];
+
+    // Guarantee default Super Admin exists if database was wiped or empty
+    const defaultEmail = (process.env.ADMIN_EMAIL || "admin@rangoelectronics.com").toLowerCase();
+    if (!adminUsers.some((u) => u.email.toLowerCase() === defaultEmail)) {
+      adminUsers.unshift({
+        id: "adm-1",
+        name: "Rango Super Admin",
+        email: defaultEmail,
+        passwordHash: hashPassword(process.env.ADMIN_PASSWORD || "Rango@2026"),
+        role: "Super Admin",
+        active: true,
+        createdAt: new Date().toISOString(),
+      });
+    }
+
+    const matchedUser = adminUsers.find(
       (u) => u.email.toLowerCase() === email
     );
 
@@ -57,7 +89,7 @@ export async function POST(req: NextRequest) {
     }
 
     const nowIso = new Date().toISOString();
-    const updatedUsers = (db.adminUsers || []).map((u) =>
+    const updatedUsers = adminUsers.map((u) =>
       u.id === matchedUser.id ? { ...u, lastLoginAt: nowIso } : u
     );
 
@@ -67,14 +99,18 @@ export async function POST(req: NextRequest) {
       matchedUser.name
     );
 
-    const updatedDb = appendAuditLog(
-      { ...db, adminUsers: updatedUsers },
-      matchedUser.email,
-      "Security",
-      `Signed in to Enterprise Admin (${matchedUser.role})`,
-      matchedUser.role
-    );
-    writeAdminDb(updatedDb);
+    try {
+      const updatedDb = appendAuditLog(
+        { ...db, adminUsers: updatedUsers },
+        matchedUser.email,
+        "Security",
+        `Signed in to Enterprise Admin (${matchedUser.role})`,
+        matchedUser.role
+      );
+      writeAdminDb(updatedDb);
+    } catch (writeErr) {
+      console.warn("Audit log or admin-db write skipped during login:", writeErr);
+    }
 
     const res = NextResponse.json({
       authenticated: true,
@@ -99,8 +135,8 @@ export async function POST(req: NextRequest) {
   } catch (err) {
     console.error("Admin Auth POST error:", err);
     return NextResponse.json(
-      { error: "Invalid request payload" },
-      { status: 400 }
+      { error: "Authentication system encountered an issue. Please try again." },
+      { status: 500 }
     );
   }
 }

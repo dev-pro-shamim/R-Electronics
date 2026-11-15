@@ -51,9 +51,38 @@ export function readServerSecrets(): ServerSecretsStore {
 
 export function getGoogleOAuthConfig(): { clientId: string; clientSecret: string } {
   const store = readServerSecrets();
+  const rawId = (
+    process.env.GOOGLE_CLIENT_ID ||
+    process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ||
+    store.googleClientId ||
+    ""
+  ).trim();
+  const rawSecret = (
+    process.env.GOOGLE_CLIENT_SECRET ||
+    store.googleClientSecret ||
+    ""
+  ).trim();
+
+  // Guard against placeholder strings accidentally deployed from .env.example
+  const isPlaceholder = (val: string) => {
+    const lower = val.toLowerCase();
+    return (
+      !val ||
+      lower.includes("your_") ||
+      lower.includes("placeholder") ||
+      lower.includes("example") ||
+      lower.includes("xxxx") ||
+      lower.includes("client_id_here")
+    );
+  };
+
+  if (isPlaceholder(rawId) || isPlaceholder(rawSecret)) {
+    return { clientId: "", clientSecret: "" };
+  }
+
   return {
-    clientId: (process.env.GOOGLE_CLIENT_ID || store.googleClientId || "").trim(),
-    clientSecret: (process.env.GOOGLE_CLIENT_SECRET || store.googleClientSecret || "").trim(),
+    clientId: rawId,
+    clientSecret: rawSecret,
   };
 }
 

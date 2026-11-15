@@ -196,15 +196,9 @@ export default function AuthPanel({
     setError("");
     setLoading(true);
     try {
-      // 1. Try first-party direct Google OAuth route
-      const checkRes = await fetch("/api/auth/google?check=1", { cache: "no-store" });
-      const checkData = await checkRes.json().catch(() => ({ configured: false }));
-      if (checkData?.configured) {
-        window.location.href = "/api/auth/google";
-        return;
-      }
-
-      // 2. Fallback to Supabase OAuth if first-party credentials aren't set in environment
+      // 1. Prioritize Supabase OAuth which is connected to Google Cloud Console
+      // callback (https://yokoqyidmhdurhwmzxgm.supabase.co/auth/v1/callback),
+      // preventing 'invalid_client' and 'redirect_uri_mismatch' errors on Vercel.
       const redirectTo = `${window.location.origin}/auth/callback`;
       const { data, error: sbError } = await supabase.auth.signInWithOAuth({
         provider: "google",
@@ -217,11 +211,21 @@ export default function AuthPanel({
         },
       });
 
+      if (!sbError && data?.url) {
+        window.location.href = data.url;
+        return;
+      }
+
+      // 2. Secondary fallback to direct Google OAuth route if configured
+      const checkRes = await fetch("/api/auth/google?check=1", { cache: "no-store" });
+      const checkData = await checkRes.json().catch(() => ({ configured: false }));
+      if (checkData?.configured) {
+        window.location.href = "/api/auth/google";
+        return;
+      }
+
       if (sbError) {
         throw sbError;
-      }
-      if (data?.url) {
-        window.location.href = data.url;
       }
     } catch (err) {
       setError(
