@@ -115353,7 +115353,7 @@ export const PRODUCTS: Product[] = [
     "inStock": true,
     "stockCount": 14,
     "badge": "10% OFF",
-    "thumbnail": "https://image.haier.com/bd/commercial-air-conditioners/W020250915659271322622_600.png",
+    "thumbnail": "https://image.haier.com/bd/air-conditioners/W020250915659271322622_600.png",
     "images": [
       "https://image.haier.com/bd/commercial-air-conditioners/W020250915659271322622_600.png"
     ],
