@@ -72,6 +72,1170 @@ export interface Product {
 
 export const PRODUCTS: Product[] = [
   {
+    "id": "haier-fridge-hrf-578tpb",
+    "slug": "haier-hrf-578tpb-t-door-inverter-refrigerator",
+    "title": "Haier HRF-578TPB(BD) T Door Inverter Refrigerator",
+    "category": "refrigerator",
+    "subcategory": "side-by-side-refrigerator",
+    "brand": "Haier",
+    "model": "HRF-578TPB(BD)",
+    "price": 134910,
+    "originalPrice": 149900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 17,
+    "inStock": true,
+    "stockCount": 10,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/refrigerators/W020251230634687442105_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/refrigerators/W020251230634687442105_1200_q.png",
+      "https://image.haier.com/bd/refrigerators/W020251230634687442105_1200_q_p1911.png",
+      "https://image.haier.com/bd/refrigerators/W020251230634687442105_600.png",
+      "https://image.haier.com/bd/refrigerators/W020251230632821715551_600.png",
+      "https://image.haier.com/bd/refrigerators/W020251230634687442105_1200.png"
+    ],
+    "shortDescription": "Haier HRF-578TPB(BD) T Door Inverter Refrigerator with Twin Inverter Technology and 10% discount from MRP.",
+    "description": "<p>Haier HRF-578TPB(BD) is a high-performance T Door refrigerator designed for Bangladeshi households. Features Twin Inverter Technology, Deo Fresh odor eliminator, Turbo Icing, and 100% genuine Haier warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HRF-578TPB(BD)"
+          },
+          {
+            "key": "Category",
+            "value": "T Door"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts, 2 Years Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Parts, 2 Years Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 11243,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-fridge-hrf-622ibg",
+    "slug": "haier-hrf-622ibg-sbs-inverter-refrigerator",
+    "title": "Haier HRF-622IBG (SKD) SBS Inverter Refrigerator",
+    "category": "refrigerator",
+    "subcategory": "side-by-side-refrigerator",
+    "brand": "Haier",
+    "model": "HRF-622IBG (SKD)",
+    "price": 131310,
+    "originalPrice": 145900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 14,
+    "inStock": true,
+    "stockCount": 10,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/refrigerators/W020251005640211257795_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/refrigerators/W020251005640211257795_1200_q.png",
+      "https://image.haier.com/bd/refrigerators/W020251005640211257795_1200_q_p1911.png",
+      "https://image.haier.com/bd/refrigerators/W020251005640211257795_600.png",
+      "https://image.haier.com/bd/refrigerators/W020251005640211415895_600.png",
+      "https://image.haier.com/bd/refrigerators/W020251005640211531034_600.png"
+    ],
+    "shortDescription": "Haier HRF-622IBG (SKD) SBS Inverter Refrigerator with Twin Inverter Technology and 10% discount from MRP.",
+    "description": "<p>Haier HRF-622IBG (SKD) is a high-performance SBS refrigerator designed for Bangladeshi households. Features Twin Inverter Technology, Deo Fresh odor eliminator, Turbo Icing, and 100% genuine Haier warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HRF-622IBG (SKD)"
+          },
+          {
+            "key": "Category",
+            "value": "SBS"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts, 2 Years Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Parts, 2 Years Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 10943,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-fridge-hrf-622icg",
+    "slug": "haier-hrf-622icg-sbs-inverter-refrigerator",
+    "title": "Haier HRF-622ICG (SKD) SBS Inverter Refrigerator",
+    "category": "refrigerator",
+    "subcategory": "side-by-side-refrigerator",
+    "brand": "Haier",
+    "model": "HRF-622ICG (SKD)",
+    "price": 130410,
+    "originalPrice": 144900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 8,
+    "inStock": true,
+    "stockCount": 10,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/refrigerators/W020251005639162906442_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/refrigerators/W020251005639162906442_1200_q.png",
+      "https://image.haier.com/bd/refrigerators/W020251005639162906442_1200_q_p1911.png",
+      "https://image.haier.com/bd/refrigerators/W020251005639162906442_600.png",
+      "https://image.haier.com/bd/refrigerators/W020251005639163449553_600.png",
+      "https://image.haier.com/bd/refrigerators/W020251005639163566792_600.png"
+    ],
+    "shortDescription": "Haier HRF-622ICG (SKD) SBS Inverter Refrigerator with Twin Inverter Technology and 10% discount from MRP.",
+    "description": "<p>Haier HRF-622ICG (SKD) is a high-performance SBS refrigerator designed for Bangladeshi households. Features Twin Inverter Technology, Deo Fresh odor eliminator, Turbo Icing, and 100% genuine Haier warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HRF-622ICG (SKD)"
+          },
+          {
+            "key": "Category",
+            "value": "SBS"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts, 2 Years Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Parts, 2 Years Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 10868,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-fridge-hrf-386tbg",
+    "slug": "haier-hrf-386tbg-nf-inverter-refrigerator",
+    "title": "Haier HRF-386TBG NF Inverter Refrigerator",
+    "category": "refrigerator",
+    "subcategory": "non-frost-refrigerator",
+    "brand": "Haier",
+    "model": "HRF-386TBG",
+    "price": 71910,
+    "originalPrice": 79900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 19,
+    "inStock": true,
+    "stockCount": 10,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/refrigerators/W020251005643234145497_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/refrigerators/W020251005643234145497_1200_q.png",
+      "https://image.haier.com/bd/refrigerators/W020251005643234145497_1200_q_p1911.png",
+      "https://image.haier.com/bd/refrigerators/W020251005643234145497_600.png",
+      "https://image.haier.com/bd/refrigerators/W020251005643234517500_600.png",
+      "https://image.haier.com/bd/refrigerators/W020251005643234145497_1200.png"
+    ],
+    "shortDescription": "Haier HRF-386TBG NF Inverter Refrigerator with Twin Inverter Technology and 10% discount from MRP.",
+    "description": "<p>Haier HRF-386TBG is a high-performance NF refrigerator designed for Bangladeshi households. Features Twin Inverter Technology, Deo Fresh odor eliminator, Turbo Icing, and 100% genuine Haier warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HRF-386TBG"
+          },
+          {
+            "key": "Category",
+            "value": "NF"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts, 2 Years Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Parts, 2 Years Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 5993,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-fridge-hrf-362tbg",
+    "slug": "haier-hrf-362tbg-nf-inverter-refrigerator",
+    "title": "Haier HRF-362TBG NF Inverter Refrigerator",
+    "category": "refrigerator",
+    "subcategory": "non-frost-refrigerator",
+    "brand": "Haier",
+    "model": "HRF-362TBG",
+    "price": 68310,
+    "originalPrice": 75900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 24,
+    "inStock": true,
+    "stockCount": 10,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/refrigerators/W020251005643876422072_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/refrigerators/W020251005643876422072_1200_q.png",
+      "https://image.haier.com/bd/refrigerators/W020251005643876422072_1200_q_p1911.png",
+      "https://image.haier.com/bd/refrigerators/W020251005643876422072_600.png",
+      "https://image.haier.com/bd/refrigerators/W020251005643876971225_600.png",
+      "https://image.haier.com/bd/refrigerators/W020251005643876422072_1200.png"
+    ],
+    "shortDescription": "Haier HRF-362TBG NF Inverter Refrigerator with Twin Inverter Technology and 10% discount from MRP.",
+    "description": "<p>Haier HRF-362TBG is a high-performance NF refrigerator designed for Bangladeshi households. Features Twin Inverter Technology, Deo Fresh odor eliminator, Turbo Icing, and 100% genuine Haier warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HRF-362TBG"
+          },
+          {
+            "key": "Category",
+            "value": "NF"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts, 2 Years Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Parts, 2 Years Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 5693,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-fridge-hrf-500vbg",
+    "slug": "haier-hrf-500vbg-nf-inverter-refrigerator",
+    "title": "Haier HRF-500VBG NF Inverter Refrigerator",
+    "category": "refrigerator",
+    "subcategory": "non-frost-refrigerator",
+    "brand": "Haier",
+    "model": "HRF-500VBG",
+    "price": 103410,
+    "originalPrice": 114900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 25,
+    "inStock": true,
+    "stockCount": 10,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/refrigerators/W020260103478142511392_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/refrigerators/W020260103478142511392_1200_q.png",
+      "https://image.haier.com/bd/refrigerators/W020260103478142511392_1200_q_p1911.png",
+      "https://image.haier.com/bd/refrigerators/W020260103478142511392_600.png",
+      "https://image.haier.com/bd/refrigerators/W020260103478142814102_600.png",
+      "https://image.haier.com/bd/refrigerators/W020260103478143275379_600.png"
+    ],
+    "shortDescription": "Haier HRF-500VBG NF Inverter Refrigerator with Twin Inverter Technology and 10% discount from MRP.",
+    "description": "<p>Haier HRF-500VBG is a high-performance NF refrigerator designed for Bangladeshi households. Features Twin Inverter Technology, Deo Fresh odor eliminator, Turbo Icing, and 100% genuine Haier warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HRF-500VBG"
+          },
+          {
+            "key": "Category",
+            "value": "NF"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts, 2 Years Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Parts, 2 Years Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 8618,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-fridge-hrf-500vmb",
+    "slug": "haier-hrf-500vmb-nf-inverter-refrigerator",
+    "title": "Haier HRF-500VMB NF Inverter Refrigerator",
+    "category": "refrigerator",
+    "subcategory": "non-frost-refrigerator",
+    "brand": "Haier",
+    "model": "HRF-500VMB",
+    "price": 98010,
+    "originalPrice": 108900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 9,
+    "inStock": true,
+    "stockCount": 10,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/refrigerators/W020260524802195737063_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/refrigerators/W020260524802195737063_1200_q.png",
+      "https://image.haier.com/bd/refrigerators/W020260524802195737063_1200_q_p1911.png",
+      "https://image.haier.com/bd/refrigerators/W020260524802195737063_600.png",
+      "https://image.haier.com/bd/refrigerators/W020260524802196146546_600.png",
+      "https://image.haier.com/bd/refrigerators/W020260524802196505587_600.png"
+    ],
+    "shortDescription": "Haier HRF-500VMB NF Inverter Refrigerator with Twin Inverter Technology and 10% discount from MRP.",
+    "description": "<p>Haier HRF-500VMB is a high-performance NF refrigerator designed for Bangladeshi households. Features Twin Inverter Technology, Deo Fresh odor eliminator, Turbo Icing, and 100% genuine Haier warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HRF-500VMB"
+          },
+          {
+            "key": "Category",
+            "value": "NF"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts, 2 Years Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Parts, 2 Years Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 8168,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-fridge-hrf-475vbg",
+    "slug": "haier-hrf-475vbg-nf-inverter-refrigerator",
+    "title": "Haier HRF-475VBG NF Inverter Refrigerator",
+    "category": "refrigerator",
+    "subcategory": "non-frost-refrigerator",
+    "brand": "Haier",
+    "model": "HRF-475VBG",
+    "price": 97110,
+    "originalPrice": 107900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 20,
+    "inStock": true,
+    "stockCount": 10,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/refrigerators/W020260103439828216241_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/refrigerators/W020260103439828216241_1200_q.png",
+      "https://image.haier.com/bd/refrigerators/W020260103439828216241_1200_q_p1911.png",
+      "https://image.haier.com/bd/refrigerators/W020260103439828216241_600.png",
+      "https://image.haier.com/bd/refrigerators/W020260103439828360867_600.png",
+      "https://image.haier.com/bd/refrigerators/W020260103441539494069_600.png"
+    ],
+    "shortDescription": "Haier HRF-475VBG NF Inverter Refrigerator with Twin Inverter Technology and 10% discount from MRP.",
+    "description": "<p>Haier HRF-475VBG is a high-performance NF refrigerator designed for Bangladeshi households. Features Twin Inverter Technology, Deo Fresh odor eliminator, Turbo Icing, and 100% genuine Haier warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HRF-475VBG"
+          },
+          {
+            "key": "Category",
+            "value": "NF"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts, 2 Years Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Parts, 2 Years Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 8093,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-fridge-hrf-475vmb",
+    "slug": "haier-hrf-475vmb-nf-inverter-refrigerator",
+    "title": "Haier HRF-475VMB NF Inverter Refrigerator",
+    "category": "refrigerator",
+    "subcategory": "non-frost-refrigerator",
+    "brand": "Haier",
+    "model": "HRF-475VMB",
+    "price": 92610,
+    "originalPrice": 102900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 17,
+    "inStock": true,
+    "stockCount": 10,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/refrigerators/W020260525680211054959_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/refrigerators/W020260525680211054959_1200_q.png",
+      "https://image.haier.com/bd/refrigerators/W020260525680211054959_1200_q_p1911.png",
+      "https://image.haier.com/bd/refrigerators/W020260525680211054959_600.png",
+      "https://image.haier.com/bd/refrigerators/W020260525680211451380_600.png",
+      "https://image.haier.com/bd/refrigerators/W020260525680211701118_600.png"
+    ],
+    "shortDescription": "Haier HRF-475VMB NF Inverter Refrigerator with Twin Inverter Technology and 10% discount from MRP.",
+    "description": "<p>Haier HRF-475VMB is a high-performance NF refrigerator designed for Bangladeshi households. Features Twin Inverter Technology, Deo Fresh odor eliminator, Turbo Icing, and 100% genuine Haier warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HRF-475VMB"
+          },
+          {
+            "key": "Category",
+            "value": "NF"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts, 2 Years Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Parts, 2 Years Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 7718,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-oven-hmw-m2001bbd",
+    "slug": "haier-hmw-m2001bbd-solo",
+    "title": "Haier HMW-M2001BBD Solo Microwave Oven (Solo)",
+    "category": "microwave-oven",
+    "subcategory": "solo",
+    "brand": "Haier",
+    "model": "HMW-M2001BBD",
+    "price": 9891,
+    "originalPrice": 10990,
+    "discount": 10,
+    "rating": 4.8,
+    "ratingCount": 5,
+    "inStock": true,
+    "stockCount": 12,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/oven/W020260909489834729928_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/oven/W020260909489834729928_1200_q.png",
+      "https://image.haier.com/bd/oven/W020260909489834729928_1200_q_p1911.png",
+      "https://image.haier.com/bd/oven/W020260909489834729928_600.png",
+      "https://image.haier.com/bd/oven/W020260909489834946444_600.png"
+    ],
+    "shortDescription": "Haier HMW-M2001BBD Solo Microwave Oven with 10% discount from official MRP.",
+    "description": "<p>Haier HMW-M2001BBD Solo Microwave Oven features auto cook menus, child lock, easy touch controls, and high-efficiency defrosting. Includes official Haier brand warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HMW-M2001BBD"
+          },
+          {
+            "key": "Type",
+            "value": "Solo"
+          },
+          {
+            "key": "Warranty",
+            "value": "2 Years Magnetron, 1 Year Spare Parts, 1 Year Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "2 Years Magnetron Warranty, 1 Year Spare Parts, 1 Year Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 824,
+    "freeDelivery": true,
+    "installationIncluded": false,
+    "reviews": []
+  },
+  {
+    "id": "haier-oven-hmw-e2301gbbd",
+    "slug": "haier-hmw-e2301gbbd-grill",
+    "title": "Haier HMW-E2301GBBD Grill Microwave Oven (Grill)",
+    "category": "microwave-oven",
+    "subcategory": "grill",
+    "brand": "Haier",
+    "model": "HMW-E2301GBBD",
+    "price": 14391,
+    "originalPrice": 15990,
+    "discount": 10,
+    "rating": 4.8,
+    "ratingCount": 15,
+    "inStock": true,
+    "stockCount": 12,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/oven/W020260909566679536050_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/oven/W020260909566679536050_1200_q.png",
+      "https://image.haier.com/bd/oven/W020260909566679536050_1200_q_p1911.png",
+      "https://image.haier.com/bd/oven/W020260909566679536050_600.png",
+      "https://image.haier.com/bd/oven/W020260909566680365146_600.png"
+    ],
+    "shortDescription": "Haier HMW-E2301GBBD Grill Microwave Oven with 10% discount from official MRP.",
+    "description": "<p>Haier HMW-E2301GBBD Grill Microwave Oven features auto cook menus, child lock, easy touch controls, and high-efficiency defrosting. Includes official Haier brand warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HMW-E2301GBBD"
+          },
+          {
+            "key": "Type",
+            "value": "Grill"
+          },
+          {
+            "key": "Warranty",
+            "value": "2 Years Magnetron, 1 Year Spare Parts, 1 Year Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "2 Years Magnetron Warranty, 1 Year Spare Parts, 1 Year Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 1199,
+    "freeDelivery": true,
+    "installationIncluded": false,
+    "reviews": []
+  },
+  {
+    "id": "haier-oven-hmw-e3001cbbd",
+    "slug": "haier-hmw-e3001cbbd-convection",
+    "title": "Haier HMW-E3001CBBD Convection Microwave Oven (Convection)",
+    "category": "microwave-oven",
+    "subcategory": "convection",
+    "brand": "Haier",
+    "model": "HMW-E3001CBBD",
+    "price": 21591,
+    "originalPrice": 23990,
+    "discount": 10,
+    "rating": 4.8,
+    "ratingCount": 7,
+    "inStock": true,
+    "stockCount": 12,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/oven/W020260909618407392771_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/oven/W020260909618407392771_1200_q.png",
+      "https://image.haier.com/bd/oven/W020260909618407392771_1200_q_p1911.png",
+      "https://image.haier.com/bd/oven/W020260909618407392771_600.png",
+      "https://image.haier.com/bd/oven/W020260909618407635337_600.png"
+    ],
+    "shortDescription": "Haier HMW-E3001CBBD Convection Microwave Oven with 10% discount from official MRP.",
+    "description": "<p>Haier HMW-E3001CBBD Convection Microwave Oven features auto cook menus, child lock, easy touch controls, and high-efficiency defrosting. Includes official Haier brand warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HMW-E3001CBBD"
+          },
+          {
+            "key": "Type",
+            "value": "Convection"
+          },
+          {
+            "key": "Warranty",
+            "value": "2 Years Magnetron, 1 Year Spare Parts, 1 Year Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "2 Years Magnetron Warranty, 1 Year Spare Parts, 1 Year Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 1799,
+    "freeDelivery": true,
+    "installationIncluded": false,
+    "reviews": []
+  },
+  {
+    "id": "haier-freezer-hcf-420sme",
+    "slug": "haier-hcf-420sme-369l",
+    "title": "Haier HCF-420SME Chest Freezer (369L)",
+    "category": "refrigerator",
+    "subcategory": "chest-freezer",
+    "brand": "Haier",
+    "model": "HCF-420SME",
+    "price": 67410,
+    "originalPrice": 74900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 19,
+    "inStock": true,
+    "stockCount": 15,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/freezers/W020260416645842812021_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/freezers/W020260416645842812021_1200_q.png",
+      "https://image.haier.com/bd/freezers/W020260416645842812021_1200_q_p1911.png",
+      "https://image.haier.com/bd/freezers/W020260416645842812021_600.png",
+      "https://image.haier.com/bd/freezers/W020260416645411886109_600.png"
+    ],
+    "shortDescription": "Haier HCF-420SME 369L Deep Freezer with 10% discount from official MRP.",
+    "description": "<p>Haier HCF-420SME is a high-efficiency 369L chest deep freezer featuring super fast freeze, 100 hours cool retention during power outage, anti-bacterial liner, and 10 years official compressor warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HCF-420SME"
+          },
+          {
+            "key": "Gross Capacity",
+            "value": "369L"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts & Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Spare Parts, 2 Years Free Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 5618,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-freezer-hcf-340sm",
+    "slug": "haier-hcf-340sm-301l",
+    "title": "Haier HCF-340SM Chest Freezer (301L)",
+    "category": "refrigerator",
+    "subcategory": "chest-freezer",
+    "brand": "Haier",
+    "model": "HCF-340SM",
+    "price": 53460,
+    "originalPrice": 59400,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 25,
+    "inStock": true,
+    "stockCount": 15,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/freezers/W020251005671197177501_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/freezers/W020251005671197177501_1200_q.png",
+      "https://image.haier.com/bd/freezers/W020251005671197177501_1200_q_p1911.png",
+      "https://image.haier.com/bd/freezers/W020251005671197177501_600.png",
+      "https://image.haier.com/bd/freezers/W020251005671197481644_600.png"
+    ],
+    "shortDescription": "Haier HCF-340SM 301L Deep Freezer with 10% discount from official MRP.",
+    "description": "<p>Haier HCF-340SM is a high-efficiency 301L chest deep freezer featuring super fast freeze, 100 hours cool retention during power outage, anti-bacterial liner, and 10 years official compressor warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HCF-340SM"
+          },
+          {
+            "key": "Gross Capacity",
+            "value": "301L"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts & Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Spare Parts, 2 Years Free Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 4455,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-freezer-hcf-290sm",
+    "slug": "haier-hcf-290sm-251l",
+    "title": "Haier HCF-290SM Chest Freezer (251L)",
+    "category": "refrigerator",
+    "subcategory": "chest-freezer",
+    "brand": "Haier",
+    "model": "HCF-290SM",
+    "price": 48060,
+    "originalPrice": 53400,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 9,
+    "inStock": true,
+    "stockCount": 15,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/freezers/W020251005672150557878_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/freezers/W020251005672150557878_1200_q.png",
+      "https://image.haier.com/bd/freezers/W020251005672150557878_1200_q_p1911.png",
+      "https://image.haier.com/bd/freezers/W020251005672150557878_600.png",
+      "https://image.haier.com/bd/freezers/W020251005672150828617_600.png"
+    ],
+    "shortDescription": "Haier HCF-290SM 251L Deep Freezer with 10% discount from official MRP.",
+    "description": "<p>Haier HCF-290SM is a high-efficiency 251L chest deep freezer featuring super fast freeze, 100 hours cool retention during power outage, anti-bacterial liner, and 10 years official compressor warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HCF-290SM"
+          },
+          {
+            "key": "Gross Capacity",
+            "value": "251L"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts & Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Spare Parts, 2 Years Free Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 4005,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-freezer-hcf-230sge",
+    "slug": "haier-hcf-230sge-200l",
+    "title": "Haier HCF-230SGE Chest Freezer (200L)",
+    "category": "refrigerator",
+    "subcategory": "chest-freezer",
+    "brand": "Haier",
+    "model": "HCF-230SGE",
+    "price": 46260,
+    "originalPrice": 51400,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 14,
+    "inStock": true,
+    "stockCount": 15,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/freezers/W020260507674331951749_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/freezers/W020260507674331951749_1200_q.png",
+      "https://image.haier.com/bd/freezers/W020260507674331951749_1200_q_p1911.png",
+      "https://image.haier.com/bd/freezers/W020260507674331951749_600.png",
+      "https://image.haier.com/bd/freezers/W020260507674332104023_600.png"
+    ],
+    "shortDescription": "Haier HCF-230SGE 200L Deep Freezer with 10% discount from official MRP.",
+    "description": "<p>Haier HCF-230SGE is a high-efficiency 200L chest deep freezer featuring super fast freeze, 100 hours cool retention during power outage, anti-bacterial liner, and 10 years official compressor warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HCF-230SGE"
+          },
+          {
+            "key": "Gross Capacity",
+            "value": "200L"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts & Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Spare Parts, 2 Years Free Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 3855,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-freezer-hcf-230sgm",
+    "slug": "haier-hcf-230sgm-200l",
+    "title": "Haier HCF-230SGM Chest Freezer (200L)",
+    "category": "refrigerator",
+    "subcategory": "chest-freezer",
+    "brand": "Haier",
+    "model": "HCF-230SGM",
+    "price": 43560,
+    "originalPrice": 48400,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 14,
+    "inStock": true,
+    "stockCount": 15,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/freezers/W020251005675102144256_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/freezers/W020251005675102144256_1200_q.png",
+      "https://image.haier.com/bd/freezers/W020251005675102144256_1200_q_p1911.png",
+      "https://image.haier.com/bd/freezers/W020251005675102144256_600.png",
+      "https://image.haier.com/bd/freezers/W020251005675102298030_600.png"
+    ],
+    "shortDescription": "Haier HCF-230SGM 200L Deep Freezer with 10% discount from official MRP.",
+    "description": "<p>Haier HCF-230SGM is a high-efficiency 200L chest deep freezer featuring super fast freeze, 100 hours cool retention during power outage, anti-bacterial liner, and 10 years official compressor warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HCF-230SGM"
+          },
+          {
+            "key": "Gross Capacity",
+            "value": "200L"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts & Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Spare Parts, 2 Years Free Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 3630,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-freezer-hcf-230sgml",
+    "slug": "haier-hcf-230sgml-200l",
+    "title": "Haier HCF-230SGML Chest Freezer (200L)",
+    "category": "refrigerator",
+    "subcategory": "chest-freezer",
+    "brand": "Haier",
+    "model": "HCF-230SGML",
+    "price": 44010,
+    "originalPrice": 48900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 6,
+    "inStock": true,
+    "stockCount": 15,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/freezers/W020251005675102144256_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/freezers/W020251005675102144256_1200_q.png",
+      "https://image.haier.com/bd/freezers/W020251005675102144256_1200_q_p1911.png",
+      "https://image.haier.com/bd/freezers/W020251005675102144256_600.png",
+      "https://image.haier.com/bd/freezers/W020251005675102298030_600.png"
+    ],
+    "shortDescription": "Haier HCF-230SGML 200L Deep Freezer with 10% discount from official MRP.",
+    "description": "<p>Haier HCF-230SGML is a high-efficiency 200L chest deep freezer featuring super fast freeze, 100 hours cool retention during power outage, anti-bacterial liner, and 10 years official compressor warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HCF-230SGML"
+          },
+          {
+            "key": "Gross Capacity",
+            "value": "200L"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts & Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Spare Parts, 2 Years Free Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 3668,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-freezer-hcf-230sgel",
+    "slug": "haier-hcf-230sgel-200l",
+    "title": "Haier HCF-230SGEL Chest Freezer (200L)",
+    "category": "refrigerator",
+    "subcategory": "chest-freezer",
+    "brand": "Haier",
+    "model": "HCF-230SGEL",
+    "price": 46260,
+    "originalPrice": 51400,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 17,
+    "inStock": true,
+    "stockCount": 15,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/freezers/W020260507674331951749_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/freezers/W020260507674331951749_1200_q.png",
+      "https://image.haier.com/bd/freezers/W020260507674331951749_1200_q_p1911.png",
+      "https://image.haier.com/bd/freezers/W020260507674331951749_600.png",
+      "https://image.haier.com/bd/freezers/W020260507674332104023_600.png"
+    ],
+    "shortDescription": "Haier HCF-230SGEL 200L Deep Freezer with 10% discount from official MRP.",
+    "description": "<p>Haier HCF-230SGEL is a high-efficiency 200L chest deep freezer featuring super fast freeze, 100 hours cool retention during power outage, anti-bacterial liner, and 10 years official compressor warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HCF-230SGEL"
+          },
+          {
+            "key": "Gross Capacity",
+            "value": "200L"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts & Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Spare Parts, 2 Years Free Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 3855,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-freezer-hcf-175sge",
+    "slug": "haier-hcf-175sge-142l",
+    "title": "Haier HCF-175SGE Chest Freezer (142L)",
+    "category": "refrigerator",
+    "subcategory": "chest-freezer",
+    "brand": "Haier",
+    "model": "HCF-175SGE",
+    "price": 39510,
+    "originalPrice": 43900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 22,
+    "inStock": true,
+    "stockCount": 15,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/freezers/W020260512590763923208_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/freezers/W020260512590763923208_1200_q.png",
+      "https://image.haier.com/bd/freezers/W020260512590763923208_1200_q_p1911.png",
+      "https://image.haier.com/bd/freezers/W020260512590763923208_600.png",
+      "https://image.haier.com/bd/freezers/W020260512590764257605_600.png"
+    ],
+    "shortDescription": "Haier HCF-175SGE 142L Deep Freezer with 10% discount from official MRP.",
+    "description": "<p>Haier HCF-175SGE is a high-efficiency 142L chest deep freezer featuring super fast freeze, 100 hours cool retention during power outage, anti-bacterial liner, and 10 years official compressor warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HCF-175SGE"
+          },
+          {
+            "key": "Gross Capacity",
+            "value": "142L"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts & Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Spare Parts, 2 Years Free Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 3293,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
+    "id": "haier-freezer-hcf-175sgel",
+    "slug": "haier-hcf-175sgel-142l",
+    "title": "Haier HCF-175SGEL Chest Freezer (142L)",
+    "category": "refrigerator",
+    "subcategory": "chest-freezer",
+    "brand": "Haier",
+    "model": "HCF-175SGEL",
+    "price": 39510,
+    "originalPrice": 43900,
+    "discount": 10,
+    "rating": 4.9,
+    "ratingCount": 17,
+    "inStock": true,
+    "stockCount": 15,
+    "badge": "10% OFF",
+    "thumbnail": "https://image.haier.com/bd/freezers/W020260512590763923208_1200_q.png",
+    "images": [
+      "https://image.haier.com/bd/freezers/W020260512590763923208_1200_q.png",
+      "https://image.haier.com/bd/freezers/W020260512590763923208_1200_q_p1911.png",
+      "https://image.haier.com/bd/freezers/W020260512590763923208_600.png",
+      "https://image.haier.com/bd/freezers/W020260512590764257605_600.png"
+    ],
+    "shortDescription": "Haier HCF-175SGEL 142L Deep Freezer with 10% discount from official MRP.",
+    "description": "<p>Haier HCF-175SGEL is a high-efficiency 142L chest deep freezer featuring super fast freeze, 100 hours cool retention during power outage, anti-bacterial liner, and 10 years official compressor warranty.</p>",
+    "specifications": [
+      {
+        "group": "Specifications",
+        "items": [
+          {
+            "key": "Brand",
+            "value": "Haier"
+          },
+          {
+            "key": "Model",
+            "value": "HCF-175SGEL"
+          },
+          {
+            "key": "Gross Capacity",
+            "value": "142L"
+          },
+          {
+            "key": "Warranty",
+            "value": "10 Years Compressor, 2 Years Parts & Service"
+          }
+        ]
+      }
+    ],
+    "warranty": "10 Years Compressor Warranty, 2 Years Spare Parts, 2 Years Free Service",
+    "emiAvailable": true,
+    "emiStartingFrom": 3293,
+    "freeDelivery": true,
+    "installationIncluded": true,
+    "reviews": []
+  },
+  {
     "id": "em-696",
     "slug": "gree-shimo-split-air-conditioner-1-0-ton-inverter-new",
     "title": "GREE Shimo Split Air Conditioner (1.0 TON) Inverter",
@@ -13687,8 +14851,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-12TURBOAQUA-FIX--PRO--X6-",
-    "price": 50400,
-    "originalPrice": 56000,
+    "price": 45891,
+    "originalPrice": 50990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 8,
@@ -13731,7 +14895,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 4200,
+    "emiStartingFrom": 3824,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -13744,8 +14908,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-5-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-18TURBOAQUA-FIX--PRO--X6-",
-    "price": 67500,
-    "originalPrice": 75000,
+    "price": 57591,
+    "originalPrice": 63990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 30,
@@ -13788,7 +14952,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 5625,
+    "emiStartingFrom": 4799,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -13801,8 +14965,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "2-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-24TURBOAQUA-FIX--PRO--X6-",
-    "price": 82800,
-    "originalPrice": 92000,
+    "price": 71091,
+    "originalPrice": 78990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 8,
@@ -13845,7 +15009,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 6900,
+    "emiStartingFrom": 5924,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -14029,8 +15193,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-5-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-19HEATCOOL-INV--PRO-",
-    "price": 67500,
-    "originalPrice": 75000,
+    "price": 72891,
+    "originalPrice": 80990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 21,
@@ -14073,7 +15237,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 5625,
+    "emiStartingFrom": 6074,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -14086,8 +15250,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-5-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-19ULTIMATECOOL-INV--PRO-",
-    "price": 67500,
-    "originalPrice": 75000,
+    "price": 89991,
+    "originalPrice": 99990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 11,
@@ -14130,7 +15294,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 5625,
+    "emiStartingFrom": 7499,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -14314,8 +15478,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-5-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-19UVCOOL-INV--PRO--X6-",
-    "price": 67500,
-    "originalPrice": 75000,
+    "price": 71991,
+    "originalPrice": 79990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 17,
@@ -14358,7 +15522,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 5625,
+    "emiStartingFrom": 5999,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -14542,8 +15706,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-5-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-19GRAVITY-INV--PRO--X6-",
-    "price": 67500,
-    "originalPrice": 75000,
+    "price": 75591,
+    "originalPrice": 83990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 20,
@@ -14586,7 +15750,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 5625,
+    "emiStartingFrom": 6299,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -14599,8 +15763,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-13GRAVITY-INV--PRO--X6-",
-    "price": 50400,
-    "originalPrice": 56000,
+    "price": 60291,
+    "originalPrice": 66990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 6,
@@ -14643,7 +15807,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 4200,
+    "emiStartingFrom": 5024,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -14656,8 +15820,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "2-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-24GRAVITY-INV--PRO--X6-",
-    "price": 82800,
-    "originalPrice": 92000,
+    "price": 90891,
+    "originalPrice": 100990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 19,
@@ -14700,7 +15864,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 6900,
+    "emiStartingFrom": 7574,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -14770,8 +15934,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-5-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-19ANTIRUSTCOOL-INV--PRO--X6-",
-    "price": 67500,
-    "originalPrice": 75000,
+    "price": 70191,
+    "originalPrice": 77990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 17,
@@ -14814,7 +15978,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 5625,
+    "emiStartingFrom": 5849,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -14827,8 +15991,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-5-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-19ULTIMATECOOL-INV--PRO--X6--T3-",
-    "price": 67500,
-    "originalPrice": 75000,
+    "price": 89991,
+    "originalPrice": 99990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 12,
@@ -14871,7 +16035,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 5625,
+    "emiStartingFrom": 7499,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -14884,8 +16048,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-13CLEANCOOL-INV--PRO--X6-",
-    "price": 50400,
-    "originalPrice": 56000,
+    "price": 53091,
+    "originalPrice": 58990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 27,
@@ -14928,7 +16092,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 4200,
+    "emiStartingFrom": 4424,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -14941,8 +16105,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "2-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-24ANTIRUSTCOOL-INV--PRO--X6-",
-    "price": 82800,
-    "originalPrice": 92000,
+    "price": 84591,
+    "originalPrice": 93990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 28,
@@ -14985,7 +16149,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 6900,
+    "emiStartingFrom": 7049,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -14998,8 +16162,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-13ANTIRUSTCOOL-INV--PRO--X6-",
-    "price": 50400,
-    "originalPrice": 56000,
+    "price": 54891,
+    "originalPrice": 60990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 10,
@@ -15042,7 +16206,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 4200,
+    "emiStartingFrom": 4574,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -15112,8 +16276,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-5-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-18REVIVECOOL-INV--PRO--X6-",
-    "price": 67500,
-    "originalPrice": 75000,
+    "price": 62991,
+    "originalPrice": 69990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 10,
@@ -15156,7 +16320,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 5625,
+    "emiStartingFrom": 5249,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -15226,8 +16390,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-13UVCOOL-INV--PRO--X6-",
-    "price": 50400,
-    "originalPrice": 56000,
+    "price": 56691,
+    "originalPrice": 62990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 19,
@@ -15270,7 +16434,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 4200,
+    "emiStartingFrom": 4724,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -15283,8 +16447,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "2-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-24UVCOOL-INV--PRO--X6-",
-    "price": 82800,
-    "originalPrice": 92000,
+    "price": 86391,
+    "originalPrice": 95990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 20,
@@ -15327,7 +16491,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 6900,
+    "emiStartingFrom": 7199,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -15340,8 +16504,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "2-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-24CLEANCOOL-INV--PRO--X6-",
-    "price": 82800,
-    "originalPrice": 92000,
+    "price": 82791,
+    "originalPrice": 91990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 15,
@@ -15384,7 +16548,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 6900,
+    "emiStartingFrom": 6899,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -15397,8 +16561,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-5-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-19CLEANCOOL-INV--PRO--X6-",
-    "price": 67500,
-    "originalPrice": 75000,
+    "price": 68391,
+    "originalPrice": 75990,
     "discount": 10,
     "rating": 4.9,
     "ratingCount": 25,
@@ -15441,7 +16605,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor Warranty, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 5625,
+    "emiStartingFrom": 5699,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -15926,8 +17090,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-13AntirustCool(INV",
-    "price": 48600,
-    "originalPrice": 54000,
+    "price": 54891,
+    "originalPrice": 60990,
     "discount": 10,
     "rating": 4.8,
     "ratingCount": 14,
@@ -15965,7 +17129,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 4050,
+    "emiStartingFrom": 4574,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -15978,8 +17142,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "2-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-24AntirustCool (INV",
-    "price": 79200,
-    "originalPrice": 88000,
+    "price": 84591,
+    "originalPrice": 93990,
     "discount": 10,
     "rating": 4.8,
     "ratingCount": 11,
@@ -16017,7 +17181,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 6600,
+    "emiStartingFrom": 7049,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -16030,8 +17194,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-13UVCool",
-    "price": 48600,
-    "originalPrice": 54000,
+    "price": 56691,
+    "originalPrice": 62990,
     "discount": 10,
     "rating": 4.8,
     "ratingCount": 12,
@@ -16069,7 +17233,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 4050,
+    "emiStartingFrom": 4724,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -16082,8 +17246,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "2-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-24UVCool(INV",
-    "price": 79200,
-    "originalPrice": 88000,
+    "price": 86391,
+    "originalPrice": 95990,
     "discount": 10,
     "rating": 4.8,
     "ratingCount": 17,
@@ -16121,7 +17285,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 6600,
+    "emiStartingFrom": 7199,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
@@ -16134,8 +17298,8 @@ export const PRODUCTS: Product[] = [
     "subcategory": "1-5-ton-inverter-and-non-inverter-ac",
     "brand": "Haier",
     "model": "HSU-19SolarCool (INV",
-    "price": 58500,
-    "originalPrice": 65000,
+    "price": 139500,
+    "originalPrice": 155000,
     "discount": 10,
     "rating": 4.8,
     "ratingCount": 7,
@@ -16173,7 +17337,7 @@ export const PRODUCTS: Product[] = [
     ],
     "warranty": "10 Years Compressor, 1 Year Spare Parts, 1 Year Free Service",
     "emiAvailable": true,
-    "emiStartingFrom": 4875,
+    "emiStartingFrom": 11625,
     "freeDelivery": true,
     "installationIncluded": true,
     "reviews": []
