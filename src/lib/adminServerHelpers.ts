@@ -139,9 +139,14 @@ export function getMergedCatalogProducts(
     p: Product & ProductAdminExtended
   ): Product & ProductAdminExtended => {
     const stats = reviewStatsByProduct.get(p.id);
-    const count = stats?.count || 0;
+    const count =
+      (stats && stats.count > 0)
+        ? stats.count
+        : Number(p.reviewsCount || (Array.isArray(p.reviews) ? p.reviews.length : 0));
     const avgRating =
-      count > 0 ? Number(((stats!.sum || 0) / count).toFixed(1)) : 0;
+      (stats && stats.count > 0)
+        ? Number(((stats.sum || 0) / count).toFixed(1))
+        : Number(p.rating || 4.9);
     if (!includeReviews) {
       return {
         ...p,
@@ -155,22 +160,24 @@ export function getMergedCatalogProducts(
       ...p,
       reviewsCount: count,
       rating: avgRating,
-      reviews: approved.map((r) => ({
-        id: r.id,
-        userName: r.userName || r.customerName || "Verified Buyer",
-        userLocation: r.customerLocation || "Bangladesh",
-        rating: r.rating,
-        title: r.title,
-        comment: r.comment,
-        images: r.images,
-        adminReply: r.adminReply,
-        date: new Date(r.createdAt).toLocaleDateString("en-GB", {
-          day: "numeric",
-          month: "short",
-          year: "numeric",
-        }),
-        verified: Boolean(r.verifiedPurchase),
-      })),
+      reviews: approved.length > 0
+        ? approved.map((r) => ({
+            id: r.id,
+            userName: r.userName || r.customerName || "Verified Buyer",
+            userLocation: r.customerLocation || "Bangladesh",
+            rating: r.rating,
+            title: r.title,
+            comment: r.comment,
+            images: r.images,
+            adminReply: r.adminReply,
+            date: new Date(r.createdAt).toLocaleDateString("en-GB", {
+              day: "numeric",
+              month: "short",
+              year: "numeric",
+            }),
+            verified: Boolean(r.verifiedPurchase),
+          }))
+        : (Array.isArray(p.reviews) ? p.reviews : []),
     };
   };
 
@@ -267,32 +274,38 @@ export function resolveSingleProductFast(
         new Date(b.createdAt || 0).getTime() - new Date(a.createdAt || 0).getTime()
     );
 
-  const avgRating =
+  const initialReviews: NonNullable<Product["reviews"]> =
     approvedRevs.length > 0
+      ? approvedRevs.map((r) => ({
+          id: r.id,
+          userName: r.userName || r.customerName || "Verified Buyer",
+          userLocation: r.customerLocation || "Bangladesh",
+          rating: Number(r.rating || 5),
+          title: r.title,
+          comment: r.comment,
+          images: r.images || [],
+          adminReply: r.adminReply,
+          date: new Date(r.createdAt).toLocaleDateString("en-GB", {
+            day: "numeric",
+            month: "short",
+            year: "numeric",
+          }),
+          verified: Boolean(r.verifiedPurchase),
+        }))
+      : (Array.isArray(mergedBase.reviews) && mergedBase.reviews.length > 0
+          ? mergedBase.reviews
+          : []);
+
+  const totalRevCount = initialReviews.length;
+  const avgRating =
+    totalRevCount > 0
       ? Number(
           (
-            approvedRevs.reduce((sum, r) => sum + Number(r.rating || 5), 0) /
-            approvedRevs.length
+            initialReviews.reduce((sum, r) => sum + Number(r.rating || 5), 0) /
+            totalRevCount
           ).toFixed(1)
         )
-      : 0;
-
-  const initialReviews: NonNullable<Product["reviews"]> = approvedRevs.map((r) => ({
-    id: r.id,
-    userName: r.userName || r.customerName || "Verified Buyer",
-    userLocation: r.customerLocation || "Bangladesh",
-    rating: Number(r.rating || 5),
-    title: r.title,
-    comment: r.comment,
-    images: r.images || [],
-    adminReply: r.adminReply,
-    date: new Date(r.createdAt).toLocaleDateString("en-GB", {
-      day: "numeric",
-      month: "short",
-      year: "numeric",
-    }),
-    verified: Boolean(r.verifiedPurchase),
-  }));
+      : (mergedBase.rating || 4.9);
 
   const initialQuestions = (db.productQuestions || [])
     .filter(
@@ -317,7 +330,7 @@ export function resolveSingleProductFast(
   return {
     product: {
       ...mergedBase,
-      reviewsCount: approvedRevs.length,
+      reviewsCount: totalRevCount,
       rating: avgRating,
       reviews: initialReviews.slice(0, 10),
     },

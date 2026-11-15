@@ -77,88 +77,89 @@ function CategoryContent() {
         const cat = (p.category || "").toLowerCase();
         const sub = (p.subcategory || "").toLowerCase();
         if (matchedSub) {
+          // Enforce strict category boundary: must belong to the parent category
+          if (currentCategory && cat !== currentCategory.slug.toLowerCase()) {
+            return false;
+          }
           const matchSlug = matchedSub.slug.toLowerCase();
           const matchName = matchedSub.name.toLowerCase();
           const matchId = (matchedSub.id || "").toLowerCase();
           if (
             sub === matchSlug ||
             sub === matchName ||
-            sub === matchId ||
-            cat === matchSlug
+            sub === matchId
           ) {
             return true;
           }
-          const tLower = p.title.toLowerCase();
-          if (
-            matchId === "1-ton-ac" &&
-            (sub.includes("1-ton") ||
-              tLower.includes("1.0 ton") ||
-              tLower.includes("1 ton") ||
-              tLower.includes("1.1 ton"))
-          ) {
-            return true;
-          }
-          if (
-            matchId === "1-5-ton-ac" &&
-            (sub.includes("1-5-ton") ||
-              sub.includes("1.5-ton") ||
-              tLower.includes("1.5 ton") ||
-              tLower.includes("1.6 ton"))
-          ) {
-            return true;
-          }
-          if (
-            matchId === "2-ton-ac" &&
-            (sub.includes("2-ton") ||
-              tLower.includes("2.0 ton") ||
-              tLower.includes("2 ton"))
-          ) {
-            return true;
-          }
-          if (
-            matchId === "2-5-ton-ac" &&
-            (sub.includes("2-5-ton") ||
-              sub.includes("2.5-ton") ||
-              tLower.includes("2.5 ton"))
-          ) {
-            return true;
-          }
-          if (
-            matchId === "cassette-ac" &&
-            (sub.includes("cassette") || tLower.includes("cassette"))
-          ) {
-            return true;
-          }
-          if (
-            matchId === "ceiling-ac" &&
-            (sub.includes("ceiling") || tLower.includes("ceiling"))
-          ) {
-            return true;
-          }
-          if (
-            matchId === "portable-ac" &&
-            (sub.includes("portable") ||
-              sub.includes("floor") ||
-              tLower.includes("portable") ||
-              tLower.includes("floor"))
-          ) {
-            return true;
+          if (cat === "air-conditioner") {
+            const tLower = p.title.toLowerCase();
+            if (
+              (matchId === "1-ton-ac" || matchSlug.includes("1-ton")) &&
+              (sub.includes("1-ton") ||
+                tLower.includes("1.0 ton") ||
+                tLower.includes("1 ton") ||
+                tLower.includes("1.1 ton"))
+            ) {
+              return true;
+            }
+            if (
+              (matchId === "1-5-ton-ac" || matchSlug.includes("1-5-ton")) &&
+              (sub.includes("1-5-ton") ||
+                sub.includes("1.5-ton") ||
+                tLower.includes("1.5 ton") ||
+                tLower.includes("1.6 ton"))
+            ) {
+              return true;
+            }
+            if (
+              (matchId === "2-ton-ac" || matchSlug.includes("2-ton")) &&
+              (sub.includes("2-ton") ||
+                tLower.includes("2.0 ton") ||
+                tLower.includes("2 ton"))
+            ) {
+              return true;
+            }
+            if (
+              (matchId === "2-5-ton-ac" || matchSlug.includes("2-5-ton")) &&
+              (sub.includes("2-5-ton") ||
+                sub.includes("2.5-ton") ||
+                tLower.includes("2.5 ton"))
+            ) {
+              return true;
+            }
+            if (
+              (matchId === "cassette-ac" || matchSlug.includes("cassette")) &&
+              (sub.includes("cassette") || tLower.includes("cassette"))
+            ) {
+              return true;
+            }
+            if (
+              (matchId === "ceiling-ac" || matchSlug.includes("ceiling")) &&
+              (sub.includes("ceiling") || tLower.includes("ceiling"))
+            ) {
+              return true;
+            }
+            if (
+              (matchId === "portable-ac" || matchSlug.includes("portable")) &&
+              (sub.includes("portable") ||
+                sub.includes("floor") ||
+                tLower.includes("portable") ||
+                tLower.includes("floor"))
+            ) {
+              return true;
+            }
           }
           return false;
         }
-        if (cat === s || sub === s) return true;
+
+        if (currentCategory) {
+          return cat === currentCategory.slug.toLowerCase();
+        }
+        if (cat === s) return true;
         if (isTv && cat === "television") return true;
         if (isFridge && cat === "refrigerator") return true;
         if (isOven && cat === "microwave-oven") return true;
         if (isGeyser && cat === "geyser-water-heaters") return true;
-        if (
-          currentCategory &&
-          currentCategory.slug.toLowerCase() === s &&
-          (cat === currentCategory.slug.toLowerCase() ||
-            cat === currentCategory.name.toLowerCase())
-        ) {
-          return true;
-        }
         return false;
       });
     }

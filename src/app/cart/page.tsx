@@ -112,6 +112,7 @@ export default function CartPage() {
                           <img
                             src={item.product.thumbnail || item.product.images?.[0] || "/logo.png"}
                             alt={item.product.title}
+                            referrerPolicy="no-referrer"
                             className="w-full h-full object-contain"
                             onError={(e) => {
                               (e.target as HTMLImageElement).src = "/logo.png";

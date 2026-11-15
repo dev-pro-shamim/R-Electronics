@@ -1332,6 +1332,7 @@ export const AdminCatalogModule: React.FC<AdminCatalogModuleProps> = ({
                               key={idx}
                               src={imgUrl}
                               alt="Customer upload"
+                              referrerPolicy="no-referrer"
                               className="size-14 rounded-lg object-cover border border-slate-200 bg-white"
                             />
                           ))}
@@ -1836,6 +1837,7 @@ export const AdminCatalogModule: React.FC<AdminCatalogModuleProps> = ({
                       <img
                         src={p.thumbnail || "/logo.png"}
                         alt={p.title}
+                        referrerPolicy="no-referrer"
                         className="size-11 rounded-xl border border-slate-200 object-contain bg-white p-1 shrink-0"
                       />
                       <span className="font-bold text-slate-800 line-clamp-2">{p.title}</span>

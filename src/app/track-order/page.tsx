@@ -356,6 +356,7 @@ export default function TrackOrderPage() {
                             <img
                               src={prod.image}
                               alt={prod.title || "Product"}
+                              referrerPolicy="no-referrer"
                               className="size-12 object-contain bg-white rounded border border-gray-200 shrink-0"
                             />
                           )}

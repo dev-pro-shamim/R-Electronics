@@ -67,6 +67,7 @@ export const CartDrawer: React.FC = () => {
                   <img
                     src={item.product.thumbnail}
                     alt={item.product.title}
+                    referrerPolicy="no-referrer"
                     className="size-16 object-contain rounded-lg border border-gray-100 p-1 shrink-0 bg-gray-50"
                   />
                   <div className="flex-1 min-w-0">

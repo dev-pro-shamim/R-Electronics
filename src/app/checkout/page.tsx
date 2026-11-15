@@ -734,6 +734,7 @@ export default function CheckoutPage() {
                       <img
                         src={item.product.thumbnail || item.product.images?.[0] || "/logo.png"}
                         alt={item.product.title}
+                        referrerPolicy="no-referrer"
                         className="size-12 object-contain border rounded p-0.5"
                         onError={(e) => {
                           (e.target as HTMLImageElement).src = "/logo.png";

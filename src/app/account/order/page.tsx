@@ -284,6 +284,7 @@ export default function AccountOrdersPage() {
                               <img
                                 src={item.thumbnail || "/logo.png"}
                                 alt={item.title}
+                                referrerPolicy="no-referrer"
                                 className="size-14 object-contain border rounded p-1 bg-white"
                                 onError={(e) => {
                                   (e.target as HTMLImageElement).src = "/logo.png";

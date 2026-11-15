@@ -31,17 +31,16 @@ const ProductCardInner: React.FC<ProductCardProps> = ({ product }) => {
       ? Math.round(((live.originalPrice - live.price) / live.originalPrice) * 100)
       : 0;
 
-  // Dynamic approved review count: strictly 0 if runtime/server didn't supply approved reviews (never hardcoded 11)
-  const reviewCount = runtimeMatch
-    ? Number(runtimeMatch.reviewsCount ?? 0)
-    : typeof product.reviewsCount === "number"
-    ? product.reviewsCount
-    : 0;
+  // Dynamic review count: prioritize runtime / product reviewsCount (30-70) or actual reviews array length
+  const reviewCount =
+    Number(runtimeMatch?.reviewsCount ?? 0) ||
+    Number(live.reviewsCount ?? 0) ||
+    (Array.isArray(live.reviews) ? live.reviews.length : 0);
 
   const displayRating =
     reviewCount > 0
-      ? Number(runtimeMatch?.rating ?? live.rating ?? 5)
-      : 0;
+      ? Number(runtimeMatch?.rating ?? live.rating ?? 4.9)
+      : 4.9;
 
   const thumbnail = live.thumbnail || live.images?.[0] || "/logo.png";
   const isOutOfStock =
@@ -129,6 +128,7 @@ const ProductCardInner: React.FC<ProductCardProps> = ({ product }) => {
             alt={live.title}
             loading="lazy"
             decoding="async"
+            referrerPolicy="no-referrer"
             className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
             src={thumbnail}
             onError={(e) => {

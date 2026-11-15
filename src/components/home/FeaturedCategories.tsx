@@ -77,6 +77,7 @@ export const FeaturedCategories: React.FC = () => {
               <img
                 alt={cat.name}
                 loading="lazy"
+                referrerPolicy="no-referrer"
                 className="object-contain max-h-full max-w-full"
                 src={cat.icon}
                 onError={(e) => {

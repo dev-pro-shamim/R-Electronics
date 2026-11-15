@@ -22,6 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
     "Shop authentic 4K Smart TVs, Inverter Air Conditioners, Refrigerators, Washing Machines and Smartphones with 0% EMI and official brand warranty at Rango Electronics.";
 
   return {
+    referrer: "no-referrer",
     title,
     description,
     keywords:

@@ -466,7 +466,7 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
                       </div>
 
                       <div className="w-full h-28 rounded-lg bg-slate-50 flex items-center justify-center overflow-hidden border border-slate-100">
-                        <img src={img} alt={`Product ${i + 1}`} className="w-full h-full object-contain p-1" />
+                        <img src={img} alt={`Product ${i + 1}`} referrerPolicy="no-referrer" className="w-full h-full object-contain p-1" />
                       </div>
 
                       <div className="mt-2 flex flex-wrap items-center justify-between gap-1 text-[11px]">

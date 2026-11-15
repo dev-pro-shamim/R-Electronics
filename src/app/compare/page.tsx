@@ -244,6 +244,7 @@ export default function ComparePage() {
                         <img
                           src={p.thumbnail}
                           alt={p.title}
+                          referrerPolicy="no-referrer"
                           className="size-10 object-contain rounded bg-gray-50 flex-shrink-0"
                         />
                         <div className="overflow-hidden">
@@ -280,6 +281,7 @@ export default function ComparePage() {
                             <img
                               src={p.thumbnail}
                               alt={p.title}
+                              referrerPolicy="no-referrer"
                               className="max-h-full max-w-full object-contain"
                             />
                             <button
@@ -525,6 +527,7 @@ export default function ComparePage() {
                         <img
                           src={prod.thumbnail}
                           alt={prod.title}
+                          referrerPolicy="no-referrer"
                           className="size-12 object-contain rounded bg-gray-50 flex-shrink-0"
                         />
                         <div className="overflow-hidden">

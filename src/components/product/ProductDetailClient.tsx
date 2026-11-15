@@ -368,7 +368,7 @@ export function ProductDetailClient({
                           : "border-gray-200 hover:border-gray-400"
                       }`}
                     >
-                      <img src={img} alt={`Thumb ${i}`} className="w-full h-full object-contain" />
+                      <img src={img} alt={`Thumb ${i}`} referrerPolicy="no-referrer" className="w-full h-full object-contain" />
                     </button>
                   ))}
                 </div>
@@ -384,6 +384,7 @@ export function ProductDetailClient({
                 <img
                   src={currentImage}
                   alt={product.title}
+                  referrerPolicy="no-referrer"
                   className="max-h-[460px] w-auto max-w-full object-contain transition-transform duration-150"
                   style={
                     isZoomed
@@ -862,7 +863,7 @@ export function ProductDetailClient({
                                     onClick={() => setSelectedReviewImage(img)}
                                     className="w-16 h-16 sm:w-20 sm:h-20 rounded-md border border-gray-200 overflow-hidden hover:opacity-80 transition-opacity bg-white"
                                   >
-                                    <img src={img} alt="Customer product photo" className="w-full h-full object-cover" />
+                                    <img src={img} alt="Customer product photo" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                                   </button>
                                 ))}
                               </div>
@@ -1058,7 +1059,7 @@ export function ProductDetailClient({
                         >
                           ✕
                         </button>
-                        <img src={selectedReviewImage} alt="Enlarged review photo" className="max-h-[80vh] w-auto object-contain rounded" />
+                        <img src={selectedReviewImage} alt="Enlarged review photo" referrerPolicy="no-referrer" className="max-h-[80vh] w-auto object-contain rounded" />
                       </div>
                     </div>
                   )}
