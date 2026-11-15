@@ -313,6 +313,12 @@ export const CATEGORIES: Category[] = [
 
 export const FEATURED_CATEGORIES = [
   {
+    "name": "Air Conditioner",
+    "slug": "air-conditioner",
+    "image": "https://d2ttkd7jwwn4uz.cloudfront.net/public/media/602/GS-12XSMA4VBA.png",
+    "count": 132
+  },
+  {
     "name": "Television",
     "slug": "television",
     "image": "https://rangoelectronics.com/wp-content/uploads/2024/09/Hisense-55-Inch-Bezelless-Dolby-Vision-4K-UHD-Smart-LED-Voice-Control-Google-DTS-TV-55A6F3-2.jpg",

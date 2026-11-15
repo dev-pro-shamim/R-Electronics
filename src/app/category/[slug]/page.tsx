@@ -77,11 +77,74 @@ function CategoryContent() {
         const cat = (p.category || "").toLowerCase();
         const sub = (p.subcategory || "").toLowerCase();
         if (matchedSub) {
-          return (
-            sub === matchedSub.slug.toLowerCase() ||
-            sub === matchedSub.name.toLowerCase() ||
-            cat === matchedSub.slug.toLowerCase()
-          );
+          const matchSlug = matchedSub.slug.toLowerCase();
+          const matchName = matchedSub.name.toLowerCase();
+          const matchId = (matchedSub.id || "").toLowerCase();
+          if (
+            sub === matchSlug ||
+            sub === matchName ||
+            sub === matchId ||
+            cat === matchSlug
+          ) {
+            return true;
+          }
+          const tLower = p.title.toLowerCase();
+          if (
+            matchId === "1-ton-ac" &&
+            (sub.includes("1-ton") ||
+              tLower.includes("1.0 ton") ||
+              tLower.includes("1 ton") ||
+              tLower.includes("1.1 ton"))
+          ) {
+            return true;
+          }
+          if (
+            matchId === "1-5-ton-ac" &&
+            (sub.includes("1-5-ton") ||
+              sub.includes("1.5-ton") ||
+              tLower.includes("1.5 ton") ||
+              tLower.includes("1.6 ton"))
+          ) {
+            return true;
+          }
+          if (
+            matchId === "2-ton-ac" &&
+            (sub.includes("2-ton") ||
+              tLower.includes("2.0 ton") ||
+              tLower.includes("2 ton"))
+          ) {
+            return true;
+          }
+          if (
+            matchId === "2-5-ton-ac" &&
+            (sub.includes("2-5-ton") ||
+              sub.includes("2.5-ton") ||
+              tLower.includes("2.5 ton"))
+          ) {
+            return true;
+          }
+          if (
+            matchId === "cassette-ac" &&
+            (sub.includes("cassette") || tLower.includes("cassette"))
+          ) {
+            return true;
+          }
+          if (
+            matchId === "ceiling-ac" &&
+            (sub.includes("ceiling") || tLower.includes("ceiling"))
+          ) {
+            return true;
+          }
+          if (
+            matchId === "portable-ac" &&
+            (sub.includes("portable") ||
+              sub.includes("floor") ||
+              tLower.includes("portable") ||
+              tLower.includes("floor"))
+          ) {
+            return true;
+          }
+          return false;
         }
         if (cat === s || sub === s) return true;
         if (isTv && cat === "television") return true;

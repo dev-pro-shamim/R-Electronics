@@ -10,9 +10,36 @@ export const AcSection: React.FC = () => {
   const runtime = useStoreRuntime();
   const source =
     runtime?.products && runtime.products.length > 0 ? runtime.products : PRODUCTS;
-  const acProducts = source
-    .filter((p) => p.category === "air-conditioner")
-    .slice(0, 10);
+
+  // Curate clean, high-resolution residential split Inverter ACs for the homepage
+  const acProducts = React.useMemo(() => {
+    const all = source.filter((p) => p.category === "air-conditioner");
+    const isCommercial = (p: (typeof all)[0]) => {
+      const t = (p.title + " " + (p.subcategory || "")).toLowerCase();
+      return (
+        t.includes("cassette") ||
+        t.includes("ceiling") ||
+        t.includes("floor type") ||
+        t.includes("7.5 ton") ||
+        t.includes("5.0 ton")
+      );
+    };
+
+    const cleanResidential = all.filter((p) => !isCommercial(p));
+    cleanResidential.sort((a, b) => {
+      const aScore =
+        (a.featured ? 10 : 0) +
+        (a.brand === "Gree" || a.brand === "Haier" ? 5 : 0) +
+        (a.thumbnail?.includes("media") || a.thumbnail?.includes("haier") ? 5 : 0);
+      const bScore =
+        (b.featured ? 10 : 0) +
+        (b.brand === "Gree" || b.brand === "Haier" ? 5 : 0) +
+        (b.thumbnail?.includes("media") || b.thumbnail?.includes("haier") ? 5 : 0);
+      return bScore - aScore;
+    });
+
+    return cleanResidential.slice(0, 10);
+  }, [source]);
 
   return (
     <section className="my-10">

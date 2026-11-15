@@ -9,7 +9,55 @@ export const HotDeals: React.FC = () => {
   const runtime = useStoreRuntime();
   const source =
     runtime?.products && runtime.products.length > 0 ? runtime.products : PRODUCTS;
-  const hotDeals = source.filter((p) => p.hotDeal || p.discount >= 20).slice(0, 10);
+
+  // Curate 10 premium, visually appealing hot deals spanning TV, AC, Fridge, Washing Machine, Oven, etc.
+  const hotDeals = React.useMemo(() => {
+    const selected: typeof source = [];
+    const usedCategories = new Set<string>();
+
+    for (const p of source) {
+      if (selected.length >= 10) break;
+      if (!p.thumbnail || p.thumbnail.includes("placeholder")) continue;
+      const t = (p.title + " " + (p.subcategory || "")).toLowerCase();
+      if (
+        t.includes("cassette") ||
+        t.includes("ceiling") ||
+        t.includes("floor type") ||
+        t.includes("7.5 ton")
+      ) {
+        continue;
+      }
+
+      if (!usedCategories.has(p.category) && (p.featured || p.hotDeal || p.discount >= 10)) {
+        selected.push(p);
+        usedCategories.add(p.category);
+      }
+    }
+
+    if (selected.length < 10) {
+      for (const p of source) {
+        if (selected.length >= 10) break;
+        if (
+          !selected.some((s) => s.id === p.id) &&
+          p.thumbnail &&
+          !p.thumbnail.includes("placeholder")
+        ) {
+          const t = (p.title + " " + (p.subcategory || "")).toLowerCase();
+          if (
+            t.includes("cassette") ||
+            t.includes("ceiling") ||
+            t.includes("floor type") ||
+            t.includes("7.5 ton")
+          ) {
+            continue;
+          }
+          selected.push(p);
+        }
+      }
+    }
+
+    return selected.slice(0, 10);
+  }, [source]);
 
   return (
     <section className="my-10">
