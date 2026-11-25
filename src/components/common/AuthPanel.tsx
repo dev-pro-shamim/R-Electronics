@@ -196,42 +196,13 @@ export default function AuthPanel({
     setError("");
     setLoading(true);
     try {
-      // 1. Prioritize Supabase OAuth which is connected to Google Cloud Console
-      // callback (https://yokoqyidmhdurhwmzxgm.supabase.co/auth/v1/callback),
-      // preventing 'invalid_client' and 'redirect_uri_mismatch' errors on Vercel.
-      const redirectTo = `${window.location.origin}/auth/callback`;
-      const { data, error: sbError } = await supabase.auth.signInWithOAuth({
-        provider: "google",
-        options: {
-          redirectTo,
-          queryParams: {
-            access_type: "offline",
-            prompt: "consent",
-          },
-        },
-      });
-
-      if (!sbError && data?.url) {
-        window.location.href = data.url;
-        return;
-      }
-
-      // 2. Secondary fallback to direct Google OAuth route if configured
-      const checkRes = await fetch("/api/auth/google?check=1", { cache: "no-store" });
-      const checkData = await checkRes.json().catch(() => ({ configured: false }));
-      if (checkData?.configured) {
-        window.location.href = "/api/auth/google";
-        return;
-      }
-
-      if (sbError) {
-        throw sbError;
-      }
+      // First-party Google OAuth route with direct Google Cloud Console credentials
+      window.location.href = "/api/auth/google";
     } catch (err) {
       setError(
         err instanceof Error
           ? err.message
-          : "Google authentication could not start. Please use Email & Password or Mobile OTP."
+          : "গুগল দিয়ে লগইন করতে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।"
       );
       setLoading(false);
     }

@@ -27,6 +27,7 @@ yarn-error.log*
 .env*.local
 .env
 data/secrets.json
+data/server-secrets.json
 
 # typescript
 *.tsbuildinfo

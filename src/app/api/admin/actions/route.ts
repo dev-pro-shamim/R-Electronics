@@ -10,7 +10,11 @@ import {
   syncReviewToSupabase,
   writeAdminDb,
 } from "@/lib/adminDb";
-import { dispatchNotification, wrapRangoEmailTemplate } from "@/lib/notifications";
+import {
+  dispatchNotification,
+  wrapRangoEmailTemplate,
+  buildDeliveryReviewEmail,
+} from "@/lib/notifications";
 import {
   applyOrderInventoryRules,
   applyProductStockDelta,
@@ -172,10 +176,11 @@ export async function POST(req: NextRequest) {
         );
 
         const custEmail = order.shippingAddress?.email;
+        const isDelivered = nextStatus === "Delivered";
         void dispatchNotification({
           eventKey: `order-status-${order.id}-${nextStatus}-${nextPaymentStatus}`,
           eventType:
-            nextStatus === "Delivered"
+            isDelivered
               ? "order_delivered"
               : nextStatus === "Cancelled"
               ? "order_cancelled"
@@ -192,15 +197,19 @@ export async function POST(req: NextRequest) {
           ),
           notifyAdmin: true,
           customerEmail: custEmail,
-          customerSubject: `Your Order #${order.id} is now ${nextStatus} — Rango Electronics`,
-          customerHtml: wrapRangoEmailTemplate(
-            `Order #${order.id} Update`,
-            nextStatus.toUpperCase(),
-            `<p>Dear ${order.shippingAddress?.fullName || "Customer"},</p>
-            <p>Your Rango Electronics order <strong>#${order.id}</strong> status is now <strong>${nextStatus}</strong> (Payment: <strong>${nextPaymentStatus}</strong>).</p>
-            ${courier && trackingNo ? `<p><strong>Courier Tracking:</strong> ${courier} — <strong>${trackingNo}</strong></p>` : ""}
-            <p>Thank you for shopping with Rango Electronics!</p>`
-          ),
+          customerSubject: isDelivered
+            ? `🎉 আপনার অর্ডার #${order.id} সফলভাবে ডেলিভারি হয়েছে — Rango Electronics`
+            : `Your Order #${order.id} is now ${nextStatus} — Rango Electronics`,
+          customerHtml: isDelivered
+            ? buildDeliveryReviewEmail(order)
+            : wrapRangoEmailTemplate(
+                `Order #${order.id} Update`,
+                nextStatus.toUpperCase(),
+                `<p>Dear ${order.shippingAddress?.fullName || "Customer"},</p>
+                <p>Your Rango Electronics order <strong>#${order.id}</strong> status is now <strong>${nextStatus}</strong> (Payment: <strong>${nextPaymentStatus}</strong>).</p>
+                ${courier && trackingNo ? `<p><strong>Courier Tracking:</strong> ${courier} — <strong>${trackingNo}</strong></p>` : ""}
+                <p>Thank you for shopping with Rango Electronics!</p>`
+              ),
           db,
         });
         break;
@@ -367,6 +376,24 @@ export async function POST(req: NextRequest) {
           db.invoices = (db.invoices || []).map((inv) =>
             inv.orderId === order.id ? { ...inv, paymentStatus: resolvedPayStatus } : inv
           );
+
+          if (nextStatus === "Delivered" && order.shippingAddress?.email) {
+            void dispatchNotification({
+              eventKey: `order-delivered-${order.id}`,
+              eventType: "order_delivered",
+              subject: `[Order #${order.id}] Delivered`,
+              html: wrapRangoEmailTemplate(
+                `Order #${order.id} Delivered`,
+                "DELIVERED",
+                `<p>Order #${order.id} marked delivered by ${session.email}.</p>`
+              ),
+              notifyAdmin: false,
+              customerEmail: order.shippingAddress.email,
+              customerSubject: `🎉 আপনার অর্ডার #${order.id} সফলভাবে ডেলিভারি হয়েছে — Rango Electronics`,
+              customerHtml: buildDeliveryReviewEmail(order),
+              db,
+            });
+          }
         }
 
         db = withAudit(
