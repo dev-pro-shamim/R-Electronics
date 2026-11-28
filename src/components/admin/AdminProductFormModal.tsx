@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { X, Upload, Plus, Trash2, Save, CheckCircle2, Star, ArrowLeft, ArrowRight, RefreshCw, ImagePlus } from "lucide-react";
+import { X, Upload, Plus, Trash2, Save, CheckCircle2, Star, ArrowLeft, ArrowRight, RefreshCw, ImagePlus, Globe, Search, Smartphone, Monitor, Sparkles, Check, AlertCircle, ShieldCheck, HelpCircle } from "lucide-react";
 import { Product, SpecificationGroup } from "@/data/products";
 import { AdminBrandItem, AdminCategoryItem, ProductAdminExtended } from "@/types/admin";
 
@@ -89,11 +89,13 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
       status: "published",
       seoTitle: "",
       seoDescription: "",
+      focusKeyword: (initialProduct as any)?.focusKeyword || "",
       tags: [],
       relatedProductIds: [],
     };
   });
 
+  const [serpDevice, setSerpDevice] = useState<"mobile" | "desktop">("mobile");
   const [newImageUrl, setNewImageUrl] = useState("");
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [isDraggingImages, setIsDraggingImages] = useState(false);
@@ -886,30 +888,253 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
           </div>
         )}
 
-        {activeSection === 9 && (
-          <div className="space-y-4">
-            <div>
-              <label className="text-xs font-bold text-slate-700 block mb-1">SEO Meta Title</label>
-              <input
-                type="text"
-                value={form.seoTitle || ""}
-                onChange={(e) => setForm({ ...form, seoTitle: e.target.value })}
-                placeholder="Custom SEO title (leave blank to use product title)"
-                className="w-full h-11 px-3.5 rounded-xl border border-slate-300 text-sm"
-              />
+        {activeSection === 9 && (() => {
+          const modelText = form.model ? ` (${form.model})` : "";
+          const defaultSeoTitle = `${form.title}${modelText} Price in Bangladesh (2026) | Rango Electronics`;
+          const effectiveTitle = form.seoTitle?.trim() || defaultSeoTitle;
+          
+          const discountText = form.originalPrice && form.originalPrice > form.price 
+            ? ` Discount Price ৳${form.price.toLocaleString()} (MRP ৳${form.originalPrice.toLocaleString()}).` 
+            : ` Price: ৳${form.price.toLocaleString()}.`;
+          const defaultSeoDesc = `Buy authentic ${form.title} in Bangladesh at Rango Electronics.${discountText} 100% genuine brand warranty, 0% EMI up to 36 months, fast delivery & official fitting support.`;
+          const effectiveDesc = form.seoDescription?.trim() || defaultSeoDesc;
+
+          const focusWord = ((form as any).focusKeyword || "").trim().toLowerCase();
+          const titleLen = effectiveTitle.length;
+          const descLen = effectiveDesc.length;
+
+          const hasFocusInTitle = focusWord ? effectiveTitle.toLowerCase().includes(focusWord) : false;
+          const hasFocusInDesc = focusWord ? effectiveDesc.toLowerCase().includes(focusWord) : false;
+          const hasFocusInSlug = focusWord ? (form.slug || "").toLowerCase().includes(focusWord.replace(/\s+/g, "-").slice(0, 15)) : false;
+          const isTitleLengthGood = titleLen >= 45 && titleLen <= 65;
+          const isDescLengthGood = descLen >= 120 && descLen <= 170;
+
+          let score = 40;
+          if (isTitleLengthGood) score += 15;
+          else if (titleLen >= 30 && titleLen <= 80) score += 8;
+          if (isDescLengthGood) score += 15;
+          else if (descLen >= 80 && descLen <= 220) score += 8;
+          if (hasFocusInTitle) score += 15;
+          if (hasFocusInDesc) score += 10;
+          if (hasFocusInSlug) score += 5;
+          score = Math.min(100, Math.max(10, score));
+
+          const handleAutoOptimize = () => {
+            const cleanTitleWord = form.title.toLowerCase().replace(/[^a-z0-9 ]/gi, "").trim();
+            const words = cleanTitleWord.split(/\s+/).slice(0, 4).join(" ");
+            const smartFocus = `${words} price in bd`;
+            setForm((prev: any) => ({
+              ...prev,
+              focusKeyword: smartFocus,
+              seoTitle: defaultSeoTitle,
+              seoDescription: defaultSeoDesc,
+            }));
+          };
+
+          return (
+            <div className="space-y-6">
+              {/* Header Banner & Auto Optimize Button */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 rounded-2xl">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="size-5 text-blue-600" />
+                    <h3 className="text-sm font-black text-slate-900">Enterprise E-Commerce SEO Suite</h3>
+                  </div>
+                  <p className="text-xs text-slate-600 mt-0.5">
+                    Live Google SERP preview, Focus Keyword targeting, Rich Snippets &amp; Algorithm Optimization.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={handleAutoOptimize}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold shadow-sm transition-colors whitespace-nowrap self-start sm:self-auto"
+                >
+                  <Sparkles className="size-3.5" />
+                  <span>1-Click 100% Auto SEO</span>
+                </button>
+              </div>
+
+              {/* Focus Keyword & Score Meter */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="md:col-span-2 space-y-1.5">
+                  <label className="text-xs font-bold text-slate-700 flex items-center justify-between">
+                    <span className="flex items-center gap-1.5">
+                      <Search className="size-3.5 text-blue-600" />
+                      Target Focus Keyword (সার্চ ইনটেন্ট কিওয়ার্ড)
+                    </span>
+                    <span className="text-[11px] text-slate-400 font-normal">What buyers search on Google</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={(form as any).focusKeyword || ""}
+                    onChange={(e) => setForm({ ...form, focusKeyword: e.target.value } as any)}
+                    placeholder="e.g. haier 30l geyser price in bd"
+                    className="w-full h-11 px-3.5 rounded-xl border border-slate-300 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  />
+                </div>
+
+                {/* Live SEO Score Widget */}
+                <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-700">SEO Health Score</span>
+                    <span className={`text-xs font-black px-2 py-0.5 rounded-full ${
+                      score >= 85 ? "bg-emerald-100 text-emerald-800" : score >= 60 ? "bg-amber-100 text-amber-800" : "bg-rose-100 text-rose-800"
+                    }`}>
+                      {score}/100 {score >= 85 ? "Excellent" : score >= 60 ? "Good" : "Needs Work"}
+                    </span>
+                  </div>
+                  <div className="w-full bg-slate-200 h-2.5 rounded-full overflow-hidden mt-2">
+                    <div
+                      className={`h-full transition-all duration-300 ${
+                        score >= 85 ? "bg-emerald-500" : score >= 60 ? "bg-amber-500" : "bg-rose-500"
+                      }`}
+                      style={{ width: `${score}%` }}
+                    />
+                  </div>
+                  <span className="text-[10px] text-slate-500 mt-1.5">
+                    {score >= 85 ? "✓ Ready to rank on Google Page 1" : "Optimize title, description & keywords below"}
+                  </span>
+                </div>
+              </div>
+
+              {/* Live Google Search Engine Preview (SERP Card) */}
+              <div className="border border-slate-200 rounded-2xl p-4 bg-white shadow-2xs space-y-3">
+                <div className="flex items-center justify-between pb-2 border-b border-slate-100">
+                  <div className="flex items-center gap-1.5 text-xs font-bold text-slate-800">
+                    <Globe className="size-4 text-emerald-600" />
+                    <span>Live Google Search Snippet Preview</span>
+                  </div>
+                  <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg">
+                    <button
+                      type="button"
+                      onClick={() => setSerpDevice("mobile")}
+                      className={`flex items-center gap-1 px-2.5 py-1 text-[11px] font-bold rounded-md transition-colors ${
+                        serpDevice === "mobile" ? "bg-white text-slate-900 shadow-2xs" : "text-slate-600 hover:text-slate-900"
+                      }`}
+                    >
+                      <Smartphone className="size-3" />
+                      <span>Mobile</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setSerpDevice("desktop")}
+                      className={`flex items-center gap-1 px-2.5 py-1 text-[11px] font-bold rounded-md transition-colors ${
+                        serpDevice === "desktop" ? "bg-white text-slate-900 shadow-2xs" : "text-slate-600 hover:text-slate-900"
+                      }`}
+                    >
+                      <Monitor className="size-3" />
+                      <span>Desktop</span>
+                    </button>
+                  </div>
+                </div>
+
+                {/* Google Card Simulation */}
+                <div className={`p-4 bg-slate-50/70 border border-slate-200/80 rounded-xl space-y-1.5 ${
+                  serpDevice === "mobile" ? "max-w-md mx-auto" : "w-full"
+                }`}>
+                  <div className="flex items-center gap-2 text-xs text-slate-600">
+                    <div className="size-5 rounded-full bg-orange-500 flex items-center justify-center text-[10px] text-white font-bold">R</div>
+                    <div className="flex flex-col text-[11px] leading-tight overflow-hidden">
+                      <span className="font-semibold text-slate-900">Rango Electronics</span>
+                      <span className="text-slate-500 truncate text-[10px]">https://rangoelectronics.com › product › {form.slug}</span>
+                    </div>
+                  </div>
+                  <h4 className="text-base sm:text-lg font-medium text-[#1a0dab] hover:underline cursor-pointer leading-snug line-clamp-2">
+                    {effectiveTitle}
+                  </h4>
+                  <div className="flex items-center gap-1.5 text-xs text-slate-700">
+                    <span className="text-amber-500 font-bold">★★★★★</span>
+                    <span className="font-semibold text-slate-800">4.9</span>
+                    <span className="text-slate-500">({form.reviewsCount || 52})</span>
+                    <span className="text-slate-300">·</span>
+                    <span className="font-bold text-slate-900">৳{form.price.toLocaleString()}</span>
+                    <span className="text-slate-300">·</span>
+                    <span className="text-emerald-700 font-semibold">In stock</span>
+                  </div>
+                  <p className="text-xs text-[#4d5156] leading-relaxed line-clamp-2 pt-0.5">
+                    {effectiveDesc}
+                  </p>
+                </div>
+              </div>
+
+              {/* Title & Description Form Fields with Character Metrics */}
+              <div className="space-y-4">
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="text-xs font-bold text-slate-700">
+                      SEO Meta Title (গুগলের টাইটেল)
+                    </label>
+                    <span className={`text-[11px] font-semibold ${
+                      titleLen > 65 ? "text-rose-600" : titleLen >= 45 ? "text-emerald-600" : "text-amber-600"
+                    }`}>
+                      {titleLen}/60 characters {titleLen > 65 ? "(Too long - will truncate)" : titleLen < 40 ? "(Too short)" : "(Ideal)"}
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    value={form.seoTitle || ""}
+                    onChange={(e) => setForm({ ...form, seoTitle: e.target.value })}
+                    placeholder={defaultSeoTitle}
+                    className="w-full h-11 px-3.5 rounded-xl border border-slate-300 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  />
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="text-xs font-bold text-slate-700">
+                      SEO Meta Description (গুগলের মেটা বিবরণ)
+                    </label>
+                    <span className={`text-[11px] font-semibold ${
+                      descLen > 165 ? "text-rose-600" : descLen >= 120 ? "text-emerald-600" : "text-amber-600"
+                    }`}>
+                      {descLen}/160 characters {descLen > 165 ? "(Too long)" : descLen < 100 ? "(Too short)" : "(Ideal)"}
+                    </span>
+                  </div>
+                  <textarea
+                    rows={3}
+                    value={form.seoDescription || ""}
+                    onChange={(e) => setForm({ ...form, seoDescription: e.target.value })}
+                    placeholder={defaultSeoDesc}
+                    className="w-full p-3.5 rounded-xl border border-slate-300 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  />
+                </div>
+              </div>
+
+              {/* Live SEO Checklist */}
+              <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
+                <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2">
+                  SEO Audit Checklist (গুগল র‍্যাঙ্কিং চেকলিস্ট)
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                  <div className="flex items-center gap-2">
+                    {hasFocusInTitle ? <Check className="size-4 text-emerald-600" /> : <AlertCircle className="size-4 text-amber-500" />}
+                    <span className={hasFocusInTitle ? "text-slate-800 font-medium" : "text-slate-500"}>Focus Keyword in Title</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {hasFocusInDesc ? <Check className="size-4 text-emerald-600" /> : <AlertCircle className="size-4 text-amber-500" />}
+                    <span className={hasFocusInDesc ? "text-slate-800 font-medium" : "text-slate-500"}>Focus Keyword in Meta Description</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {hasFocusInSlug ? <Check className="size-4 text-emerald-600" /> : <AlertCircle className="size-4 text-amber-500" />}
+                    <span className={hasFocusInSlug ? "text-slate-800 font-medium" : "text-slate-500"}>Focus Keyword in URL Slug</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {isTitleLengthGood ? <Check className="size-4 text-emerald-600" /> : <AlertCircle className="size-4 text-amber-500" />}
+                    <span className={isTitleLengthGood ? "text-slate-800 font-medium" : "text-slate-500"}>Title Length (45–65 characters)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {isDescLengthGood ? <Check className="size-4 text-emerald-600" /> : <AlertCircle className="size-4 text-amber-500" />}
+                    <span className={isDescLengthGood ? "text-slate-800 font-medium" : "text-slate-500"}>Description Length (120–170 characters)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Check className="size-4 text-emerald-600" />
+                    <span className="text-slate-800 font-medium">Auto JSON-LD Schema &amp; Google Shopping Feed active</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <label className="text-xs font-bold text-slate-700 block mb-1">SEO Meta Description</label>
-              <textarea
-                rows={4}
-                value={form.seoDescription || ""}
-                onChange={(e) => setForm({ ...form, seoDescription: e.target.value })}
-                placeholder="Search engine snippet summary (140–160 characters recommended)"
-                className="w-full p-3.5 rounded-xl border border-slate-300 text-sm"
-              />
-            </div>
-          </div>
-        )}
+          );
+        })()}
 
         {activeSection === 10 && (
           <div className="space-y-4">

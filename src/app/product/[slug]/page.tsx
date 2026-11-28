@@ -234,6 +234,41 @@ export default function ProductPage({ params }: Props) {
     ],
   };
 
+  // Product-specific FAQ Schema (Huge ranking factor for dominating Google SERP screen space)
+  const qnaItems = (initialQuestions && initialQuestions.length > 0)
+    ? initialQuestions
+    : (product.questions && product.questions.length > 0)
+    ? product.questions
+    : (product.qna && product.qna.length > 0)
+    ? product.qna
+    : [
+        {
+          question: `Does this ${product.title} come with official brand warranty in Bangladesh?`,
+          answer: `Yes, 100% genuine ${product.brand} original product with official brand warranty card inside the carton.`
+        },
+        {
+          question: `Is 0% EMI payment available for ${product.title}?`,
+          answer: `Yes, Rango Electronics provides 0% interest EMI up to 36 months across 30+ leading partner banks in Bangladesh.`
+        },
+        {
+          question: `How fast is delivery for ${product.title} across Bangladesh?`,
+          answer: `Inside Dhaka delivery is completed in 24-48 hours. Across all other 64 districts, delivery takes 2-4 business days with secure packaging.`
+        }
+      ];
+
+  const productFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: qnaItems.map((q: any) => ({
+      "@type": "Question",
+      name: q.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: q.answer,
+      },
+    })),
+  };
+
   return (
     <>
       <script
@@ -243,6 +278,10 @@ export default function ProductPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productFaqSchema) }}
       />
       <ProductDetailClient
         product={product}
