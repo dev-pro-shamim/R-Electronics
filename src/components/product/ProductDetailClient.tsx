@@ -368,7 +368,7 @@ export function ProductDetailClient({
                           : "border-gray-200 hover:border-gray-400"
                       }`}
                     >
-                      <img src={img} alt={`Thumb ${i}`} referrerPolicy="no-referrer" className="w-full h-full object-contain" />
+                      <img src={img} alt={`${product.title} - ${product.brand} - View ${i + 1}`} referrerPolicy="no-referrer" className="w-full h-full object-contain" />
                     </button>
                   ))}
                 </div>
@@ -383,7 +383,8 @@ export function ProductDetailClient({
               >
                 <img
                   src={currentImage}
-                  alt={product.title}
+                  alt={product.imageAltText || `${product.title} - ${product.brand} Price in Bangladesh`}
+                  title={product.imageAltText || `${product.title} - 100% Genuine with Brand Warranty`}
                   referrerPolicy="no-referrer"
                   className="max-h-[460px] w-auto max-w-full object-contain transition-transform duration-150"
                   style={

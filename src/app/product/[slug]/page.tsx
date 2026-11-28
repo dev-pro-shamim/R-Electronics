@@ -42,47 +42,66 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     product.seoDescription ||
     `Buy authentic ${product.title} in Bangladesh at Rango Electronics.${discountText} 100% genuine brand warranty, 0% EMI up to 36 months, fast delivery & official fitting support.`;
   
-  const url = `https://rangoelectronics.com/product/${product.slug}`;
+  const siteUrl = "https://rangoelectronics.com";
+  const canonicalUrl = product.canonicalUrl || `${siteUrl}/product/${product.slug}`;
   const imageUrl =
+    product.ogImage ||
     product.thumbnail ||
     product.images?.[0] ||
-    "https://rangoelectronics.com/logo.png";
+    `${siteUrl}/logo.png`;
+
+  // Merge primary, secondary, Bengali & default keywords
+  const allKeywords: string[] = [
+    product.focusKeyword,
+    ...(product.secondaryKeywords || []),
+    ...(product.bengaliKeywords || []),
+    `${product.title} price in Bangladesh`,
+    `${product.brand} ${product.model || ''} price in BD`,
+    `${product.title} BD price`,
+    `${product.category} price in Bangladesh`,
+    "Rango Electronics online shop",
+    "0% EMI electronics Bangladesh",
+    "Official brand warranty BD"
+  ].filter(Boolean) as string[];
+
+  const ogTitle = product.ogTitle || title;
+  const ogDescription = product.ogDescription || description;
 
   return {
     title,
     description,
-    keywords: [
-      `${product.title} price in Bangladesh`,
-      `${product.brand} ${product.model || ''} price in BD`,
-      `${product.title} BD price`,
-      `${product.category} price in Bangladesh`,
-      "Rango Electronics online shop",
-      "0% EMI electronics Bangladesh",
-      "Official brand warranty BD"
-    ],
+    keywords: allKeywords,
     alternates: {
-      canonical: url,
+      canonical: canonicalUrl,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
     openGraph: {
-      title,
-      description,
-      url,
+      title: ogTitle,
+      description: ogDescription,
+      url: canonicalUrl,
       siteName: "Rango Electronics",
+      locale: "en_BD",
       images: [
         {
-          url: imageUrl,
+          url: imageUrl.startsWith("http") ? imageUrl : `${siteUrl}${imageUrl}`,
           width: 800,
           height: 800,
-          alt: `${product.title} - Rango Electronics`,
+          alt: product.imageAltText || `${product.title} - Rango Electronics`,
         },
       ],
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
-      images: [imageUrl],
+      title: ogTitle,
+      description: ogDescription,
+      images: [imageUrl.startsWith("http") ? imageUrl : `${siteUrl}${imageUrl}`],
     },
   };
 }
@@ -106,26 +125,45 @@ export default function ProductPage({ params }: Props) {
     .trim()
     .slice(0, 300) || `${product.title} with official brand warranty from Rango Electronics`;
 
-  const productImages = product.images && product.images.length > 0
-    ? product.images.map(img => img.startsWith("http") ? img : `https://rangoelectronics.com${img}`)
-    : [product.thumbnail?.startsWith("http") ? product.thumbnail : `https://rangoelectronics.com${product.thumbnail}`];
+  const siteUrl = "https://rangoelectronics.com";
+  const rawImages = product.images && product.images.length > 0
+    ? product.images
+    : [product.thumbnail || "/logo.png"];
+
+  const productImages = rawImages.map(img => img.startsWith("http") ? img : `${siteUrl}${img}`);
+
+  // Image Schema for Google Image Search
+  const schemaImages = productImages.map((imgUrl, i) => ({
+    "@type": "ImageObject",
+    url: imgUrl,
+    caption: product.imageAltText || `${product.title} - ${product.brand} - photo ${i + 1}`,
+    name: `${product.title} - photo ${i + 1}`,
+  }));
+
+  const allKeywordStr = [
+    product.focusKeyword,
+    ...(product.secondaryKeywords || []),
+    ...(product.bengaliKeywords || []),
+  ].filter(Boolean).join(", ");
 
   const productSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "@id": `https://rangoelectronics.com/product/${product.slug}#product`,
+    "@id": `${siteUrl}/product/${product.slug}#product`,
     name: product.title,
-    image: productImages,
+    image: schemaImages,
     description: plainDescription,
+    keywords: allKeywordStr || `${product.title}, ${product.brand}, price in bangladesh`,
     sku: product.sku || product.id,
     mpn: product.model || product.sku || product.id,
+    category: product.category,
     brand: {
       "@type": "Brand",
       name: product.brand || "Rango Electronics",
     },
     offers: {
       "@type": "Offer",
-      url: `https://rangoelectronics.com/product/${product.slug}`,
+      url: `${siteUrl}/product/${product.slug}`,
       priceCurrency: "BDT",
       price: product.price,
       priceValidUntil: "2027-12-31",
@@ -137,7 +175,8 @@ export default function ProductPage({ params }: Props) {
       seller: {
         "@type": "Organization",
         name: "Rango Electronics",
-        url: "https://rangoelectronics.com",
+        url: siteUrl,
+        logo: `${siteUrl}/logo.png`,
       },
       hasMerchantReturnPolicy: {
         "@type": "MerchantReturnPolicy",
@@ -217,19 +256,19 @@ export default function ProductPage({ params }: Props) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://rangoelectronics.com",
+        item: siteUrl,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: (product.category || "Electronics").toUpperCase().replace(/-/g, " "),
-        item: `https://rangoelectronics.com/category/${product.category}`,
+        item: `${siteUrl}/category/${product.category}`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: product.title,
-        item: `https://rangoelectronics.com/product/${product.slug}`,
+        item: `${siteUrl}/product/${product.slug}`,
       },
     ],
   };

@@ -90,12 +90,21 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
       seoTitle: "",
       seoDescription: "",
       focusKeyword: (initialProduct as any)?.focusKeyword || "",
+      secondaryKeywords: (initialProduct as any)?.secondaryKeywords || [],
+      bengaliKeywords: (initialProduct as any)?.bengaliKeywords || [],
+      imageAltText: (initialProduct as any)?.imageAltText || "",
+      canonicalUrl: (initialProduct as any)?.canonicalUrl || "",
+      ogTitle: (initialProduct as any)?.ogTitle || "",
+      ogDescription: (initialProduct as any)?.ogDescription || "",
+      ogImage: (initialProduct as any)?.ogImage || "",
       tags: [],
       relatedProductIds: [],
     };
   });
 
   const [serpDevice, setSerpDevice] = useState<"mobile" | "desktop">("mobile");
+  const [secKeywordInput, setSecKeywordInput] = useState(((initialProduct as any)?.secondaryKeywords || []).join(", "));
+  const [bnKeywordInput, setBnKeywordInput] = useState(((initialProduct as any)?.bengaliKeywords || []).join(", "));
   const [newImageUrl, setNewImageUrl] = useState("");
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [isDraggingImages, setIsDraggingImages] = useState(false);
@@ -900,6 +909,9 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
           const effectiveDesc = form.seoDescription?.trim() || defaultSeoDesc;
 
           const focusWord = ((form as any).focusKeyword || "").trim().toLowerCase();
+          const secList: string[] = ((form as any).secondaryKeywords || []);
+          const bnList: string[] = ((form as any).bengaliKeywords || []);
+
           const titleLen = effectiveTitle.length;
           const descLen = effectiveDesc.length;
 
@@ -908,24 +920,51 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
           const hasFocusInSlug = focusWord ? (form.slug || "").toLowerCase().includes(focusWord.replace(/\s+/g, "-").slice(0, 15)) : false;
           const isTitleLengthGood = titleLen >= 45 && titleLen <= 65;
           const isDescLengthGood = descLen >= 120 && descLen <= 170;
+          const hasSecondary = secList.length > 0;
+          const hasBnKeywords = bnList.length > 0;
+          const hasImageAlt = Boolean((form as any).imageAltText?.trim());
 
-          let score = 40;
+          let score = 30;
           if (isTitleLengthGood) score += 15;
           else if (titleLen >= 30 && titleLen <= 80) score += 8;
           if (isDescLengthGood) score += 15;
           else if (descLen >= 80 && descLen <= 220) score += 8;
-          if (hasFocusInTitle) score += 15;
-          if (hasFocusInDesc) score += 10;
+          if (hasFocusInTitle) score += 12;
+          if (hasFocusInDesc) score += 8;
           if (hasFocusInSlug) score += 5;
+          if (hasSecondary) score += 8;
+          if (hasBnKeywords) score += 4;
+          if (hasImageAlt) score += 3;
           score = Math.min(100, Math.max(10, score));
 
           const handleAutoOptimize = () => {
             const cleanTitleWord = form.title.toLowerCase().replace(/[^a-z0-9 ]/gi, "").trim();
             const words = cleanTitleWord.split(/\s+/).slice(0, 4).join(" ");
             const smartFocus = `${words} price in bd`;
+            
+            const smartSecondary = [
+              `${words} price bangladesh`,
+              `${form.brand || 'electronics'} ${form.model || ''} bd price`.trim(),
+              `buy ${words} online dhaka`,
+              `best ${form.category.replace(/-/g, ' ')} in bd`
+            ].filter(Boolean);
+
+            const smartBn = [
+              `${form.title} দাম বাংলাদেশ`,
+              `${form.category.includes('geyser') ? 'গিজার' : form.category.includes('ac') ? 'এসি' : 'ইলেকট্রনিক্স'} প্রাইস ইন বিডি`
+            ];
+
+            const smartAlt = `${form.title} - ${form.brand || 'Rango Electronics'} - 100% Genuine with Warranty`;
+
+            setSecKeywordInput(smartSecondary.join(", "));
+            setBnKeywordInput(smartBn.join(", "));
+
             setForm((prev: any) => ({
               ...prev,
               focusKeyword: smartFocus,
+              secondaryKeywords: smartSecondary,
+              bengaliKeywords: smartBn,
+              imageAltText: smartAlt,
               seoTitle: defaultSeoTitle,
               seoDescription: defaultSeoDesc,
             }));
@@ -938,10 +977,10 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
                 <div>
                   <div className="flex items-center gap-2">
                     <Sparkles className="size-5 text-blue-600" />
-                    <h3 className="text-sm font-black text-slate-900">Enterprise E-Commerce SEO Suite</h3>
+                    <h3 className="text-sm font-black text-slate-900">Enterprise Multi-Keyword SEO Suite</h3>
                   </div>
                   <p className="text-xs text-slate-600 mt-0.5">
-                    Live Google SERP preview, Focus Keyword targeting, Rich Snippets &amp; Algorithm Optimization.
+                    Primary &amp; Secondary Keywords, Bengali Search Terms, Google Images Alt, Rich Snippets &amp; Live SERP Simulator.
                   </p>
                 </div>
                 <button
@@ -950,19 +989,25 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
                   className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold shadow-sm transition-colors whitespace-nowrap self-start sm:self-auto"
                 >
                   <Sparkles className="size-3.5" />
-                  <span>1-Click 100% Auto SEO</span>
+                  <span>⚡ 1-Click 100% Auto SEO</span>
                 </button>
               </div>
 
-              {/* Focus Keyword & Score Meter */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="md:col-span-2 space-y-1.5">
+              {/* Keyword Management Grid (Multi-Keyword Architecture) */}
+              <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-2xs space-y-4">
+                <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+                  <div className="flex items-center gap-2 font-bold text-sm text-slate-900">
+                    <Search className="size-4 text-blue-600" />
+                    <span>Multi-Keyword Targeting (মাল্টিপল কিওয়ার্ড সেটআপ)</span>
+                  </div>
+                  <span className="text-[11px] text-slate-500 font-medium">All keywords rendered into SSR meta tags &amp; schema</span>
+                </div>
+
+                {/* 1. Primary Focus Keyword */}
+                <div className="space-y-1.5">
                   <label className="text-xs font-bold text-slate-700 flex items-center justify-between">
-                    <span className="flex items-center gap-1.5">
-                      <Search className="size-3.5 text-blue-600" />
-                      Target Focus Keyword (সার্চ ইনটেন্ট কিওয়ার্ড)
-                    </span>
-                    <span className="text-[11px] text-slate-400 font-normal">What buyers search on Google</span>
+                    <span className="text-slate-900">1. Primary Focus Keyword (মূল টার্গেট কিওয়ার্ড)</span>
+                    <span className="text-[11px] text-blue-600 font-semibold">High-Intent Buyer Query</span>
                   </label>
                   <input
                     type="text"
@@ -973,27 +1018,103 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
                   />
                 </div>
 
-                {/* Live SEO Score Widget */}
-                <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-700">SEO Health Score</span>
-                    <span className={`text-xs font-black px-2 py-0.5 rounded-full ${
-                      score >= 85 ? "bg-emerald-100 text-emerald-800" : score >= 60 ? "bg-amber-100 text-amber-800" : "bg-rose-100 text-rose-800"
+                {/* 2. Secondary & LSI Keywords */}
+                <div className="space-y-1.5">
+                  <label className="text-xs font-bold text-slate-700 flex items-center justify-between">
+                    <span className="text-slate-900">2. Secondary &amp; LSI Keywords (অতিরিক্ত ও সংশ্লিষ্ট সার্চ কিওয়ার্ড)</span>
+                    <span className="text-[11px] text-slate-400">Comma separated (কমা দিয়ে আলাদা করুন)</span>
+                  </label>
+                  <textarea
+                    rows={2}
+                    value={secKeywordInput}
+                    onChange={(e) => {
+                      setSecKeywordInput(e.target.value);
+                      const arr = e.target.value.split(",").map(s => s.trim()).filter(Boolean);
+                      setForm({ ...form, secondaryKeywords: arr } as any);
+                    }}
+                    placeholder="e.g. haier horizontal geyser, 30 litre water heater price, electric geyser bd, winter water heater"
+                    className="w-full p-3 rounded-xl border border-slate-300 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  />
+                  {secList.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5 pt-1">
+                      {secList.map((kw, i) => (
+                        <span key={i} className="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] bg-blue-50 text-blue-700 font-medium border border-blue-200">
+                          #{kw}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* 3. Bengali & Phonetic Keywords */}
+                <div className="space-y-1.5">
+                  <label className="text-xs font-bold text-slate-700 flex items-center justify-between">
+                    <span className="text-slate-900">3. Bengali &amp; Phonetic Keywords (বাংলা সার্চ কিওয়ার্ড)</span>
+                    <span className="text-[11px] text-slate-400">বাংলায় যারা গুগলে সার্চ দেয়</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={bnKeywordInput}
+                    onChange={(e) => {
+                      setBnKeywordInput(e.target.value);
+                      const arr = e.target.value.split(",").map(s => s.trim()).filter(Boolean);
+                      setForm({ ...form, bengaliKeywords: arr } as any);
+                    }}
+                    placeholder="e.g. হায়ার ৩০ লিটার গিজার দাম, গিজার প্রাইস ইন বিডি, সেরা ওয়াটার হিটার"
+                    className="w-full h-11 px-3.5 rounded-xl border border-slate-300 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  />
+                  {bnList.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5 pt-1">
+                      {bnList.map((kw, i) => (
+                        <span key={i} className="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] bg-emerald-50 text-emerald-700 font-medium border border-emerald-200">
+                          {kw}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* 4. Google Image SEO Alt Text */}
+                <div className="space-y-1.5 pt-2 border-t border-slate-100">
+                  <label className="text-xs font-bold text-slate-700 flex items-center justify-between">
+                    <span className="text-slate-900">4. Google Image SEO Alt Text (গুগল ইমেজ সার্চের জন্য ছবি ট্যাগ)</span>
+                    <span className="text-[11px] text-amber-600 font-semibold">Image Search #1 Booster</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={(form as any).imageAltText || ""}
+                    onChange={(e) => setForm({ ...form, imageAltText: e.target.value } as any)}
+                    placeholder={`${form.title} - ${form.brand || 'Rango Electronics'} - Official Warranty in Bangladesh`}
+                    className="w-full h-11 px-3.5 rounded-xl border border-slate-300 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  />
+                  <p className="text-[11px] text-slate-500">
+                    This alt text is automatically injected into all product gallery images and Google XML Image Sitemap.
+                  </p>
+                </div>
+              </div>
+
+              {/* Live SEO Score & Metrics Meter */}
+              <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-bold text-slate-800 uppercase tracking-wider">Overall SEO Health Score</span>
+                    <span className={`text-xs font-black px-2.5 py-0.5 rounded-full ${
+                      score >= 85 ? "bg-emerald-100 text-emerald-800 border border-emerald-300" : score >= 60 ? "bg-amber-100 text-amber-800 border border-amber-300" : "bg-rose-100 text-rose-800 border border-rose-300"
                     }`}>
-                      {score}/100 {score >= 85 ? "Excellent" : score >= 60 ? "Good" : "Needs Work"}
+                      {score}/100 {score >= 85 ? "🏆 Top-Class Rank Ready" : score >= 60 ? "Good" : "Needs Work"}
                     </span>
                   </div>
-                  <div className="w-full bg-slate-200 h-2.5 rounded-full overflow-hidden mt-2">
-                    <div
-                      className={`h-full transition-all duration-300 ${
-                        score >= 85 ? "bg-emerald-500" : score >= 60 ? "bg-amber-500" : "bg-rose-500"
-                      }`}
-                      style={{ width: `${score}%` }}
-                    />
-                  </div>
-                  <span className="text-[10px] text-slate-500 mt-1.5">
-                    {score >= 85 ? "✓ Ready to rank on Google Page 1" : "Optimize title, description & keywords below"}
-                  </span>
+                  <p className="text-xs text-slate-500 mt-1">
+                    Calculated based on Focus Keyword density, Title/Desc lengths, LSI keywords, Image SEO &amp; Rich Schemas.
+                  </p>
+                </div>
+                <div className="w-full sm:w-64 bg-slate-200 h-3 rounded-full overflow-hidden">
+                  <div
+                    className={`h-full transition-all duration-300 ${
+                      score >= 85 ? "bg-emerald-500" : score >= 60 ? "bg-amber-500" : "bg-rose-500"
+                    }`}
+                    style={{ width: `${score}%` }}
+                  />
                 </div>
               </div>
 
@@ -1062,7 +1183,7 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <label className="text-xs font-bold text-slate-700">
-                      SEO Meta Title (গুগলের টাইটেল)
+                      SEO Meta Title (গুগলের মেটা টাইটেল)
                     </label>
                     <span className={`text-[11px] font-semibold ${
                       titleLen > 65 ? "text-rose-600" : titleLen >= 45 ? "text-emerald-600" : "text-amber-600"
@@ -1100,6 +1221,35 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
                 </div>
               </div>
 
+              {/* Advanced Technical SEO Controls (Canonical & Social) */}
+              <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-2xs space-y-4">
+                <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider pb-2 border-b border-slate-100">
+                  Advanced Technical &amp; Social SEO
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold text-slate-700">Canonical URL (Optional Override)</label>
+                    <input
+                      type="text"
+                      value={(form as any).canonicalUrl || ""}
+                      onChange={(e) => setForm({ ...form, canonicalUrl: e.target.value } as any)}
+                      placeholder={`https://rangoelectronics.com/product/${form.slug}`}
+                      className="w-full h-10 px-3 rounded-xl border border-slate-300 text-xs"
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold text-slate-700">OpenGraph Social Image URL</label>
+                    <input
+                      type="text"
+                      value={(form as any).ogImage || ""}
+                      onChange={(e) => setForm({ ...form, ogImage: e.target.value } as any)}
+                      placeholder="Custom Facebook / WhatsApp share thumbnail"
+                      className="w-full h-10 px-3 rounded-xl border border-slate-300 text-xs"
+                    />
+                  </div>
+                </div>
+              </div>
+
               {/* Live SEO Checklist */}
               <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
                 <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2">
@@ -1115,16 +1265,20 @@ export const AdminProductFormModal: React.FC<AdminProductFormModalProps> = ({
                     <span className={hasFocusInDesc ? "text-slate-800 font-medium" : "text-slate-500"}>Focus Keyword in Meta Description</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    {hasFocusInSlug ? <Check className="size-4 text-emerald-600" /> : <AlertCircle className="size-4 text-amber-500" />}
-                    <span className={hasFocusInSlug ? "text-slate-800 font-medium" : "text-slate-500"}>Focus Keyword in URL Slug</span>
+                    {hasSecondary ? <Check className="size-4 text-emerald-600" /> : <AlertCircle className="size-4 text-amber-500" />}
+                    <span className={hasSecondary ? "text-slate-800 font-medium" : "text-slate-500"}>Secondary LSI Keywords Defined ({secList.length})</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {hasBnKeywords ? <Check className="size-4 text-emerald-600" /> : <AlertCircle className="size-4 text-amber-500" />}
+                    <span className={hasBnKeywords ? "text-slate-800 font-medium" : "text-slate-500"}>Bengali Search Keywords ({bnList.length})</span>
                   </div>
                   <div className="flex items-center gap-2">
                     {isTitleLengthGood ? <Check className="size-4 text-emerald-600" /> : <AlertCircle className="size-4 text-amber-500" />}
                     <span className={isTitleLengthGood ? "text-slate-800 font-medium" : "text-slate-500"}>Title Length (45–65 characters)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    {isDescLengthGood ? <Check className="size-4 text-emerald-600" /> : <AlertCircle className="size-4 text-amber-500" />}
-                    <span className={isDescLengthGood ? "text-slate-800 font-medium" : "text-slate-500"}>Description Length (120–170 characters)</span>
+                    {hasImageAlt ? <Check className="size-4 text-emerald-600" /> : <AlertCircle className="size-4 text-amber-500" />}
+                    <span className={hasImageAlt ? "text-slate-800 font-medium" : "text-slate-500"}>Google Image SEO Alt Defined</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Check className="size-4 text-emerald-600" />

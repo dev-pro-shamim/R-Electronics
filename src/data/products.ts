@@ -68,6 +68,17 @@ export interface Product {
   reviews: Review[];
   qna?: QnA[];
   questions?: any[];
+  seoTitle?: string;
+  seoDescription?: string;
+  focusKeyword?: string;
+  secondaryKeywords?: string[];
+  bengaliKeywords?: string[];
+  canonicalUrl?: string;
+  metaRobots?: string;
+  imageAltText?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
 }
 
 export const PRODUCTS: Product[] = [

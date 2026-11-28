@@ -610,6 +610,15 @@ export interface ProductAdminExtended {
   status?: "published" | "draft" | "archived";
   seoTitle?: string;
   seoDescription?: string;
+  focusKeyword?: string;
+  secondaryKeywords?: string[];
+  bengaliKeywords?: string[];
+  canonicalUrl?: string;
+  metaRobots?: string;
+  imageAltText?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
   tags?: string[];
   relatedProductIds?: string[];
   specifications?: SpecificationGroup[];
