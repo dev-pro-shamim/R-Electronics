@@ -5,10 +5,31 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
+        allow: ["/", "/feed.xml", "/api/feed/google-shopping"],
+        disallow: [
+          "/admin",
+          "/admin/",
+          "/api/",
+          "/account",
+          "/account/",
+          "/cart",
+          "/checkout",
+          "/invoice",
+          "/*?*q=",
+          "/*?*search=",
+        ],
+      },
+      {
+        userAgent: "Googlebot",
         allow: "/",
-        disallow: ["/admin", "/api/", "/account", "/cart", "/checkout", "/invoice"],
+        disallow: ["/admin", "/admin/", "/account", "/cart", "/checkout", "/invoice"],
+      },
+      {
+        userAgent: "Googlebot-Image",
+        allow: ["/", "/products/", "/banners/", "/logo.png"],
       },
     ],
     sitemap: "https://rangoelectronics.com/sitemap.xml",
+    host: "https://rangoelectronics.com",
   };
 }
